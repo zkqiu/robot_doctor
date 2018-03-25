@@ -139,7 +139,7 @@ rgb(0, 170, 127); }</string>
           </font>
          </property>
          <property name="text">
-          <string>液压心狗-SY215挖掘机</string>
+          <string>机器人装配智能诊断系统</string>
          </property>
         </widget>
        </item>
@@ -174,7 +174,7 @@ rgb(0, 170, 127); }</string>
           <string/>
          </property>
          <property name="icon">
-          <iconset>
+          <iconset resource="resources.qrc">
            <normaloff>:/icons/rsc/restart_icon.png</normaloff>:/icons/rsc/restart_icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -203,7 +203,7 @@ rgb(0, 170, 127); }</string>
           <string/>
          </property>
          <property name="icon">
-          <iconset>
+          <iconset resource="resources.qrc">
            <normaloff>:/icons/rsc/shutdown_icon.png</normaloff>:/icons/rsc/shutdown_icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -487,6 +487,8 @@ rgb(0, 170, 127); }</string>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
