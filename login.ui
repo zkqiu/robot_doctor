@@ -242,9 +242,6 @@ rgb(0, 170, 127); }</string>
         <property name="text">
          <string/>
         </property>
-        <property name="pixmap">
-         <pixmap>:/images/rsc/心狗.png</pixmap>
-        </property>
        </widget>
       </item>
      </layout>
@@ -289,9 +286,6 @@ rgb(0, 170, 127); }</string>
         </property>
         <property name="text">
          <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>:/images/rsc/挖机.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -375,9 +369,6 @@ rgb(0, 170, 127); }</string>
              <property name="text">
               <string/>
              </property>
-             <property name="pixmap">
-              <pixmap>:/icons/rsc/用户.png</pixmap>
-             </property>
              <property name="scaledContents">
               <bool>false</bool>
              </property>
@@ -421,9 +412,6 @@ rgb(0, 170, 127); }</string>
              </property>
              <property name="text">
               <string/>
-             </property>
-             <property name="pixmap">
-              <pixmap>:/icons/rsc/密码.png</pixmap>
              </property>
             </widget>
            </item>

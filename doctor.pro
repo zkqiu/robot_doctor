@@ -25,7 +25,6 @@ DEFINES += QT_DEPRECATED_WARNINGS\
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
     armcircuitdialog.cpp \
     qcustomplot.cpp \
     qcustomlabel.cpp \
@@ -40,13 +39,10 @@ SOURCES += main.cpp\
     setsensor.cpp \
     vibrationdialog.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
     armcircuitdialog.h \
-    boomcircuitdialog.h \
-    bucketcircuitdialog.h \
     swingcircuitdialog.h \
     travelcircuitdialog.h \
-    pumpcircuitdialog.h \
     qcustomplot.h \
     qcustomlabel.h \
     faultdiagnosis.h \

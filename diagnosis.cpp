@@ -106,7 +106,7 @@ vector<double> Diagnosis::getNoise()
 
 QString Diagnosis::faultRule()
 {   QString fault="";
-    V1_feature.FeatureExtract();
+    /*V1_feature.FeatureExtract();
     V2_feature.FeatureExtract();
     V3_feature.FeatureExtract();
     N_feature.FeatureExtract();
@@ -137,7 +137,7 @@ QString Diagnosis::faultRule()
         fault=fault+"噪声正常\n";
     }else{
         fault=fault+"噪声异常\n";
-    }
+    }*/
 
     return fault;
 
