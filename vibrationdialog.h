@@ -27,12 +27,12 @@ public:
 private:
     Ui::VibrationDialog *ui;
 
-    FigureControl *pressCtrl1;
-    FigureControl *pressCtrl2;
-    FigureControl *pressCtrl3;
-    FigureControl *pressCtrl4;
-    FigureControl *pressCtrl5;
-    FigureControl *dispCtrl;
+    //FigureControl *pressCtrl1;
+    //FigureControl *pressCtrl2;
+    //FigureControl *pressCtrl3;
+    //FigureControl *pressCtrl4;
+    //FigureControl *pressCtrl5;
+   // FigureControl *dispCtrl;
 
     ClientThread *clientThread;
     QThread *fileThread;
