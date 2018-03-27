@@ -70,7 +70,7 @@ void MainWindow::on_BtnBucketCircuit_2_clicked()
 }
 
 
-
+/*
 void MainWindow::on_BtnSwingCircuit_clicked()
 {
     this->hide();
@@ -79,12 +79,13 @@ void MainWindow::on_BtnSwingCircuit_clicked()
     SwingWindow->setWindowTitle("回转液压回路");
     SwingWindow->show();
 }
+*/
 
-void MainWindow::on_BtnTravelCircuit_2_clicked()
+/*void MainWindow::on_BtnTravelCircuit_2_clicked()
 {
 
 }
-
+*/
 void MainWindow::on_BtnPumpCircuit_clicked()
 {
     this->hide();
@@ -93,7 +94,7 @@ void MainWindow::on_BtnPumpCircuit_clicked()
     PumpWindow->setWindowTitle("液压泵回路");
     PumpWindow->show();
 }
-
+/*
 void MainWindow::on_BtnTravelCircuit_clicked()
 {
     this->hide();
@@ -102,7 +103,7 @@ void MainWindow::on_BtnTravelCircuit_clicked()
     TravelWindow->setWindowTitle("行走液压回路");
     TravelWindow->show();
 }
-
+*/
 void MainWindow::on_BtnBucketCircuit_clicked()
 {
     this->hide();
@@ -112,10 +113,10 @@ void MainWindow::on_BtnBucketCircuit_clicked()
     BucketWindow->show();
 }
 
-void MainWindow::on_BtnTravelCircuit2_clicked()
+/*void MainWindow::on_BtnTravelCircuit2_clicked()
 {
     ui->BtnTravelCircuit->click();
-}
+}*/
 
 void MainWindow::on_BtnBoomCircuit2_clicked()
 {

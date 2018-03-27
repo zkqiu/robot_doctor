@@ -248,7 +248,7 @@ void ArmCircuitDialog::startSave()
 
 void ArmCircuitDialog::openHistory()
 {
-    // 重置绘图
+   /* // 重置绘图
 
     // 创建打开文件对话框，在windows系统下会出现log4cplus error,但不影响文件打开
     QString qfileName=QFileDialog::getOpenFileName(this,tr("Open"),"./",tr("*.txt;;*.dat;;*.bin;;*.csv"));
@@ -269,7 +269,7 @@ void ArmCircuitDialog::openHistory()
     ui->pressureSensor1->setPlotData(time_stramp,CylinderPressureA);
     ui->pressureSensor2->setPlotData(time_stramp,CylinderPressureB);
     ui->pressureSensor3->setPlotData(time_stramp,CylinderAx);
-    ui->pressureSensor4->setPlotData(time_stramp,CylinderAy);
+    ui->pressureSensor4->setPlotData(time_stramp,CylinderAy);*/
 }
 
 void ArmCircuitDialog::evalHealth()

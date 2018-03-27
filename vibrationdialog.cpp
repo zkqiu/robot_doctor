@@ -9,34 +9,34 @@ VibrationDialog::VibrationDialog(QWidget *parent) :
     ui(new Ui::VibrationDialog)
 {
     ui->setupUi(this);
-    setWindowTitle("信号诊断");
+    //setWindowTitle("信号诊断");
     // 关闭子窗口，返回主窗口
     connect(this,SIGNAL(rejected()),(MainWindow*)parentWidget(),SLOT(show()));
 
     // 初始化传感器控制checkbox
-    ui->VibrationSensor1->setImageLabel(ui->imagePressure1);
-    ui->VibrationSensor1->setSensorImage(":/transducer/rsc/pressure_left.png");
+    //ui->VibrationSensor1->setImageLabel(ui->imagePressure1);
+    //ui->VibrationSensor1->setSensorImage(":/transducer/rsc/pressure_left.png");
     ui->VibrationSensor1->setFigureList(ui->figureListWidget);
     ui->VibrationSensor1->setFigureName("振动通道1");
     ui->VibrationSensor1->setFigureLabel("V1(V)");
     ui->VibrationSensor1->setCombox(ui->comboBox_1);
 
-    ui->VibrationSensor2->setImageLabel(ui->imagePressure2);
-    ui->VibrationSensor2->setSensorImage(":/transducer/rsc/pressure_right.png");
+    //ui->VibrationSensor2->setImageLabel(ui->imagePressure2);
+    //ui->VibrationSensor2->setSensorImage(":/transducer/rsc/pressure_right.png");
     ui->VibrationSensor2->setFigureList(ui->figureListWidget);
     ui->VibrationSensor2->setFigureName("振动通道2");
     ui->VibrationSensor2->setFigureLabel("V2(V)");
     ui->VibrationSensor2->setCombox(ui->comboBox_2);
 
-    ui->VibrationSensor3->setImageLabel(ui->imagePressure3);
-    ui->VibrationSensor3->setSensorImage(":/transducer/rsc/pressure_left.png");
+    //ui->VibrationSensor3->setImageLabel(ui->imagePressure3);
+    //ui->VibrationSensor3->setSensorImage(":/transducer/rsc/pressure_left.png");
     ui->VibrationSensor3->setFigureList(ui->figureListWidget);
     ui->VibrationSensor3->setFigureName("振动通道3");
     ui->VibrationSensor3->setFigureLabel("V3(V)");
     ui->VibrationSensor3->setCombox(ui->comboBox_3);
 
-    ui->NoiseSensor->setImageLabel(ui->imagePressure3);
-    ui->NoiseSensor->setSensorImage(":/transducer/rsc/pressure_left.png");
+    //ui->NoiseSensor->setImageLabel(ui->imagePressure3);
+    //ui->NoiseSensor->setSensorImage(":/transducer/rsc/pressure_left.png");
     ui->NoiseSensor->setFigureList(ui->figureListWidget);
     ui->NoiseSensor->setFigureName("噪声通道");
     ui->NoiseSensor->setFigureLabel("N(V)");
@@ -114,7 +114,7 @@ void VibrationDialog::updatePlot()
     ui->VibrationSensor1->updatePlot();
     ui->VibrationSensor2->updatePlot();
     ui->VibrationSensor3->updatePlot();
-    ui->NoiseSensor3->updatePlot();
+    ui->NoiseSensor->updatePlot();
 }
 
 void VibrationDialog::updatePeriod(QString text)
@@ -167,15 +167,15 @@ void VibrationDialog::openHistory()
 
     qDebug()<<time_stramp[1]<<vibration1[1]<<vibration2[1]<<vibration3[1]<<noise[1]<<endl;
     // 添加数据，重新绘图
-    ui->pressureSensor1->setPlotData(time_stramp,vibration1);
-    ui->pressureSensor2->setPlotData(time_stramp,vibration2);
-    ui->pressureSensor3->setPlotData(time_stramp,vibration3);
-    ui->pressureSensor4->setPlotData(time_stramp,noise);
+    ui->VibrationSensor1->setPlotData(time_stramp,vibration1);
+    ui->VibrationSensor2->setPlotData(time_stramp,vibration2);
+    ui->VibrationSensor3->setPlotData(time_stramp,vibration3);
+    ui->NoiseSensor->setPlotData(time_stramp,noise);
 }
 
 void VibrationDialog::evalHealth()
 {
-    QString faultstring=faultDetector.faultRule();
+   /* QString faultstring=faultDetector.faultRule();
     ui->radar->hlthy[0]=0.87;
     ui->radar->hlthy[1]=0.55;
     ui->radar->hlthy[2]=0.35;
@@ -184,5 +184,5 @@ void VibrationDialog::evalHealth()
     ui->textFault->setDocumentTitle("元件健康");
     QFont font("楷体",12,QFont::Normal);
     ui->textFault->setFont(font);
-    ui->textFault->setText(faultstring.toStdString().c_str());
+    ui->textFault->setText(faultstring.toStdString().c_str());*/
 }

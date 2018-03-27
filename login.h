@@ -9,6 +9,7 @@
 #include <QDebug>
 #include <QTimer>
 #include "mainwindow.h"
+#include "vibrationdialog.h"
 
 namespace Ui {
 class Login;
@@ -32,6 +33,7 @@ private slots:
 private:
     Ui::Login *ui;
     MainWindow *mainWindow;
+    VibrationDialog * vibrationDiolog;
     QSqlDatabase db;
     QTimer *timer;
 };

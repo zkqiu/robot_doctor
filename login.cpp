@@ -52,9 +52,13 @@ void Login::on_loginButon_clicked()
 //                qDebug()<<"The user "<<userID<<"can login";
 //            }
     this->hide();
-    mainWindow=new MainWindow(this);
-    mainWindow->setWindowTitle("挖掘机液压系统");
-    mainWindow->show();
+    //mainWindow=new MainWindow(this);
+    //mainWindow->setWindowTitle("挖掘机液压系统");
+    //mainWindow->show();
+
+    vibrationDiolog = new VibrationDialog(this);
+    vibrationDiolog->setWindowTitle("机器人装配状态智能诊断系统");
+    vibrationDiolog->show();
 //        }
 //        else
 //        {

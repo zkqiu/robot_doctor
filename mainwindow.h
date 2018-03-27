@@ -5,8 +5,8 @@
 #include "armcircuitdialog.h"
 #include "boomcircuitdialog.h"
 #include "bucketcircuitdialog.h"
-#include "swingcircuitdialog.h"
-#include "travelcircuitdialog.h"
+//#include "swingcircuitdialog.h"
+//#include "travelcircuitdialog.h"
 #include "pumpcircuitdialog.h"
 
 namespace Ui {
@@ -33,17 +33,17 @@ private slots:
 
     void on_BtnBucketCircuit_2_clicked();
 
-    void on_BtnSwingCircuit_clicked();
+    //void on_BtnSwingCircuit_clicked();
 
-    void on_BtnTravelCircuit_2_clicked();
+    //void on_BtnTravelCircuit_2_clicked();
 
     void on_BtnPumpCircuit_clicked();
 
-    void on_BtnTravelCircuit_clicked();
+    //void on_BtnTravelCircuit_clicked();
 
     void on_BtnBucketCircuit_clicked();
 
-    void on_BtnTravelCircuit2_clicked();
+    //void on_BtnTravelCircuit2_clicked();
 
     void on_BtnBoomCircuit2_clicked();
 
@@ -54,8 +54,8 @@ private:
     ArmCircuitDialog *ArmWindow;
     BoomCircuitDialog *BoomWindow;
     BucketCircuitDialog *BucketWindow;
-    SwingCircuitDialog *SwingWindow;
-    TravelCircuitDialog *TravelWindow;
+    //SwingCircuitDialog *SwingWindow;
+    //TravelCircuitDialog *TravelWindow;
     PumpCircuitDialog *PumpWindow;
 };
 
