@@ -17,14 +17,14 @@ signals:
 
 private:
     // 液压回路图中传感器显示控制
-    QImage *image;
-    QLabel *imageLabel;
+    QImage *image;//用不到
+    QLabel *imageLabel;//用不到
     // 数据采集图中绘图控制
     QCustomPlot *figure;
     QListWidgetItem *figureItem;
     QListWidget *figureList;
     QString figureName;
-    QString figureLabel;
+    QString figureLabel;//纵坐标标签
     // 传感器选择下拉菜单
     QComboBox *comBox;
 

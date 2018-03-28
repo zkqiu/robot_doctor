@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1040</width>
-    <height>648</height>
+    <height>667</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>290</y>
+     <x>30</x>
+     <y>310</y>
      <width>351</width>
      <height>321</height>
     </rect>
@@ -168,8 +168,8 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>570</y>
+     <x>50</x>
+     <y>590</y>
      <width>931</width>
      <height>61</height>
     </rect>
@@ -271,8 +271,8 @@
   <widget class="QGroupBox" name="groupBox_3">
    <property name="geometry">
     <rect>
-     <x>760</x>
-     <y>290</y>
+     <x>750</x>
+     <y>310</y>
      <width>201</width>
      <height>101</height>
     </rect>
@@ -322,8 +322,8 @@
   <widget class="QGroupBox" name="groupBox_4">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>290</y>
+     <x>420</x>
+     <y>310</y>
      <width>241</width>
      <height>261</height>
     </rect>
@@ -357,18 +357,18 @@
   <widget class="QListWidget" name="figureListWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>1001</width>
-     <height>271</height>
+     <x>0</x>
+     <y>0</y>
+     <width>1051</width>
+     <height>291</height>
     </rect>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>760</x>
-     <y>390</y>
+     <x>750</x>
+     <y>410</y>
      <width>201</width>
      <height>151</height>
     </rect>
