@@ -30,29 +30,25 @@ SOURCES += main.cpp\
     login.cpp \
     clientthread.cpp \
     savefile.cpp \
-    checksensor.cpp \
     radarwidget.cpp \
     diagnosis.cpp \
     features.cpp \
     figurecontrol.cpp \
-    setsensor.cpp \
     vibrationdialog.cpp
 
 HEADERS  += \
     swingcircuitdialog.h \
     travelcircuitdialog.h \
+    pumpcircuitdialog.h \
     qcustomplot.h \
     qcustomlabel.h \
-    faultdiagnosis.h \
     login.h \
     clientthread.h \
     savefile.h \
-    checksensor.h \
     radarwidget.h \
     diagnosis.h \
     features.h \
     figurecontrol.h \
-    setsensor.h \
     vibrationdialog.h
 
 FORMS    += \

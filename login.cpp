@@ -39,36 +39,11 @@ Login::~Login()
 
 void Login::on_loginButon_clicked()
 {
-    QString username=ui->username->text();
-    QString password=ui->password->text();
-    QSqlQuery query;
-//    if(query.exec("SELECT userID from user WHERE username='"+username+"'AND password='"+password+"'"))
-//    {
-//        if(query.size()>0)
-//        {
-//            while(query.next())
-//            {
-//                QString userID=query.value(0).toString();
-//                qDebug()<<"The user "<<userID<<"can login";
-//            }
-    this->hide();
-    //mainWindow=new MainWindow(this);
-    //mainWindow->setWindowTitle("挖掘机液压系统");
-    //mainWindow->show();
 
-    vibrationDiolog = new VibrationDialog(this);
-    vibrationDiolog->setWindowTitle("机器人装配状态智能诊断系统");
-    vibrationDiolog->show();
-//        }
-//        else
-//        {
-//            QMessageBox::warning(this, "Login failed","Invalid username or password.");
-//        }
-//    }
-//    else
-//    {
-//        qDebug() << query.lastError().text();
-//    }
+    this->hide();
+    DiagWindow=new VibrationDialog(this);
+    DiagWindow->setWindowTitle("机械臂健康诊断系统");
+    DiagWindow->show();
 }
 
 void Login::on_shutdownButton_clicked()

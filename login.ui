@@ -139,7 +139,7 @@ rgb(0, 170, 127); }</string>
           </font>
          </property>
          <property name="text">
-          <string>机器人装配智能诊断系统</string>
+          <string>液压心狗-SY215挖掘机</string>
          </property>
         </widget>
        </item>
@@ -174,7 +174,7 @@ rgb(0, 170, 127); }</string>
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="resources.qrc">
+          <iconset>
            <normaloff>:/icons/rsc/restart_icon.png</normaloff>:/icons/rsc/restart_icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -203,7 +203,7 @@ rgb(0, 170, 127); }</string>
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="resources.qrc">
+          <iconset>
            <normaloff>:/icons/rsc/shutdown_icon.png</normaloff>:/icons/rsc/shutdown_icon.png</iconset>
          </property>
          <property name="iconSize">
@@ -241,6 +241,9 @@ rgb(0, 170, 127); }</string>
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/images/rsc/心狗.png</pixmap>
         </property>
        </widget>
       </item>
@@ -286,6 +289,9 @@ rgb(0, 170, 127); }</string>
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/images/rsc/挖机.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -369,6 +375,9 @@ rgb(0, 170, 127); }</string>
              <property name="text">
               <string/>
              </property>
+             <property name="pixmap">
+              <pixmap>:/icons/rsc/用户.png</pixmap>
+             </property>
              <property name="scaledContents">
               <bool>false</bool>
              </property>
@@ -412,6 +421,9 @@ rgb(0, 170, 127); }</string>
              </property>
              <property name="text">
               <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>:/icons/rsc/密码.png</pixmap>
              </property>
             </widget>
            </item>
@@ -487,8 +499,6 @@ rgb(0, 170, 127); }</string>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="resources.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
