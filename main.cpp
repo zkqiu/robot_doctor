@@ -1,11 +1,11 @@
-#include "login.h"
+#include "vibrationdialog.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Login w;
-    w.setWindowTitle("挖掘机液压心狗");
+    VibrationDialog w;
+    w.setWindowTitle("机械臂健康诊断");
     w.show();
 
 

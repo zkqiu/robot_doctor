@@ -63,6 +63,11 @@ bool Features::getDecrease()
     return decrease;
 }
 
+bool Features::is_normal()
+{
+    return true;
+}
+
 void Features::Check_change()//unchanged,increase,decrease
 {
     vector<double>::size_type start=100;

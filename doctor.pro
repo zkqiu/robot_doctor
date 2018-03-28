@@ -27,32 +27,28 @@ DEFINES += QT_DEPRECATED_WARNINGS\
 SOURCES += main.cpp\
     qcustomplot.cpp \
     qcustomlabel.cpp \
-    login.cpp \
     clientthread.cpp \
     savefile.cpp \
     radarwidget.cpp \
     diagnosis.cpp \
-    features.cpp \
     figurecontrol.cpp \
-    vibrationdialog.cpp
+    vibrationdialog.cpp \
+    features.cpp
 
 HEADERS  += \
     swingcircuitdialog.h \
     travelcircuitdialog.h \
-    pumpcircuitdialog.h \
     qcustomplot.h \
     qcustomlabel.h \
-    login.h \
     clientthread.h \
     savefile.h \
     radarwidget.h \
     diagnosis.h \
-    features.h \
     figurecontrol.h \
-    vibrationdialog.h
+    vibrationdialog.h \
+    features.h
 
 FORMS    += \
-    login.ui \
     vibrationdialog.ui
 
 RESOURCES += \
