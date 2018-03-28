@@ -39,7 +39,6 @@ SOURCES += main.cpp\
 HEADERS  += \
     swingcircuitdialog.h \
     travelcircuitdialog.h \
-    pumpcircuitdialog.h \
     qcustomplot.h \
     qcustomlabel.h \
     login.h \

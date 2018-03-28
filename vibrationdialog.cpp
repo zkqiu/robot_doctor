@@ -167,7 +167,7 @@ void VibrationDialog::openHistory()
 }
 
 void VibrationDialog::evalHealth()
-{
+{/*
     QString faultstring=faultDetector.faultRule();
     ui->radar->hlthy[0]=0.87;
     ui->radar->hlthy[1]=0.55;
@@ -177,5 +177,5 @@ void VibrationDialog::evalHealth()
     ui->textFault->setDocumentTitle("元件健康");
     QFont font("楷体",12,QFont::Normal);
     ui->textFault->setFont(font);
-    ui->textFault->setText(faultstring.toStdString().c_str());
+    ui->textFault->setText(faultstring.toStdString().c_str());*/
 }
