@@ -1,4 +1,5 @@
 #include "figurecontrol.h"
+#include <QDebug>
 
 FigureControl::FigureControl(QWidget *parent) : QCheckBox(parent)
 {
@@ -147,12 +148,12 @@ void FigureControl::setCombox(QComboBox *ui_combox)
 
 void FigureControl::controlSensor(bool displayed)
 {
+    qDebug()<<displayed;
     if(displayed)
     {
-        imageLabel->show();
         figure=new QCustomPlot(this);
         addGraph(figure);
-        figure->setFixedSize(470,120);
+        figure->setFixedSize(1049,309);
         // 绘图设置
         setPlot(figure);
         figure->yAxis->setLabel(figureLabel);
@@ -163,7 +164,6 @@ void FigureControl::controlSensor(bool displayed)
     }
     else
     {
-        imageLabel->hide();
         // 从ListWidget中删除figure
         figureList->removeItemWidget(figureItem);
         delete figureItem;
