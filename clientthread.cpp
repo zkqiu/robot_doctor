@@ -87,7 +87,7 @@ void ClientThread::getTcpData()
 }
 
 void ClientThread::dataConvert(QString dataStr, QVector<double> &timeStramp, QVector<double> &value1, QVector<double> &value2,
-                               QVector<double> value3,QVector<double> value4)
+                               QVector<double> &value3,QVector<double> &value4)
 {
     qDebug()<<"Saving file thread is : "<<QThread::currentThreadId();
     //保存所有数据

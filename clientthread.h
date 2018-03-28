@@ -32,7 +32,7 @@ signals:
 public:
     void dataConvert(QString qstr,QVector<double> &timeStramp,
                      QVector<double> &value1,QVector<double> &value2,
-                     QVector<double> value3,QVector<double> value4);
+                     QVector<double> &value3,QVector<double> &value4);
 };
 
 #endif // CLIENTTHREAD_H
