@@ -33,7 +33,7 @@ VibrationDialog::VibrationDialog(QWidget *parent) :
     ui->NoiseSensor->setFigureList(ui->figureListWidget);
     ui->NoiseSensor->setFigureName("噪声通道");
     ui->NoiseSensor->setFigureLabel("N(V)");
-    ui->NoiseSensor->setCombox(ui->comboBox_3);
+    ui->NoiseSensor->setCombox(ui->comboBox_4);
 
 
     // 绘图区横轴滚轮条取消
@@ -178,4 +178,5 @@ void VibrationDialog::evalHealth()
     QFont font("楷体",12,QFont::Normal);
     ui->textFault->setFont(font);
     ui->textFault->setText(faultstring.toStdString().c_str());*/
+    ui->textFault->setText("此处显示诊断结果......");
 }

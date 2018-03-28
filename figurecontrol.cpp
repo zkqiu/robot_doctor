@@ -153,7 +153,7 @@ void FigureControl::controlSensor(bool displayed)
     {
         figure=new QCustomPlot(this);
         addGraph(figure);
-        figure->setFixedSize(1000,300);
+        figure->setFixedSize(700,280);
         // 绘图设置
         qDebug()<<figure->size();
         setPlot(figure);
