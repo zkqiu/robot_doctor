@@ -576,7 +576,7 @@
      <height>291</height>
     </rect>
    </property>
-   <widget class="RadarWidget" name="widget_3" native="true">
+   <widget class="RadarWidget" name="radar" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -586,7 +586,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="textFault">
     <property name="geometry">
      <rect>
       <x>3</x>
