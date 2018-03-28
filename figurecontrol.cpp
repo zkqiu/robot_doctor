@@ -148,13 +148,14 @@ void FigureControl::setCombox(QComboBox *ui_combox)
 
 void FigureControl::controlSensor(bool displayed)
 {
-    qDebug()<<displayed;
+    //qDebug()<<displayed;
     if(displayed)
     {
         figure=new QCustomPlot(this);
         addGraph(figure);
-        figure->setFixedSize(1049,309);
+        figure->setFixedSize(1000,300);
         // 绘图设置
+        qDebug()<<figure->size();
         setPlot(figure);
         figure->yAxis->setLabel(figureLabel);
         // figure加入ListWidget
