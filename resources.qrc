@@ -1,1 +1,24 @@
+<<<<<<< HEAD
 <RCC/>
+=======
+<RCC>
+    <qresource prefix="/icons">
+        <file>rsc/pause.png</file>
+        <file>rsc/play.png</file>
+        <file>rsc/restart_icon.png</file>
+        <file>rsc/shutdown_icon.png</file>
+        <file>rsc/开始.png</file>
+        <file>rsc/历史.png</file>
+        <file>rsc/密码.png</file>
+        <file>rsc/评估.png</file>
+        <file>rsc/停止.png</file>
+        <file>rsc/用户.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>rsc/login_bg.png</file>
+        <file>rsc/robot.png</file>
+        <file>robot.png</file>
+        <file>robot.jpg</file>
+    </qresource>
+</RCC>
+>>>>>>> master

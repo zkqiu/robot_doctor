@@ -7,7 +7,12 @@ VibrationDialog::VibrationDialog(QWidget *parent) :
     ui(new Ui::VibrationDialog)
 {
     ui->setupUi(this);
-    setWindowTitle("信号诊断");
+    setWindowTitle("机器人装配智能诊断系统");
+    //设置按钮圆角
+    //ui->btnRun->setStyleSheet("border-radius:10px;padding:2px 4px;");
+    //ui->btnStop->setStyleSheet("border-radius:10px;padding:2px 4px;");
+    //ui->btnHistory->setStyleSheet("border-radius:10px;padding:2px 4px;");
+   // ui->btnEval->setStyleSheet("border-radius:10px;padding:2px 4px;");
     // 关闭子窗口，返回主窗口
 
     // 初始化传感器控制checkbox
@@ -122,7 +127,7 @@ void VibrationDialog::startSave()
     dt.setTime(currTime.currentTime());
     dt.setDate(currDate.currentDate());
     QString fileName=dt.toString("yyyy-MM-dd-hh-mm");
-    SaveFile *saveFile=new SaveFile("./vibration_data/"+fileName+"vibration.txt");
+    SaveFile *saveFile=new SaveFile("./vibration_data/"+fileName+"-vibration.txt");
     // 添加到ListWidget
     int row=ui->listWidget->count();
     QListWidgetItem *newFile = new QListWidgetItem;
@@ -164,10 +169,11 @@ void VibrationDialog::openHistory()
 }
 
 void VibrationDialog::evalHealth()
-{
+{/*
     QString faultstring=faultDetector.faultRule();
     ui->textFault->setDocumentTitle("元件健康");
     QFont font("楷体",12,QFont::Normal);
     ui->textFault->setFont(font);
-    ui->textFault->setText(faultstring.toStdString().c_str());
+    ui->textFault->setText(faultstring.toStdString().c_str());*/
+    ui->textFault->setText("此处显示诊断结果......");
 }
