@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 245, 231);</string>
+   <string notr="true">background-color: rgb(210, 226, 243);</string>
   </property>
   <widget class="QListWidget" name="figureListWidget">
    <property name="geometry">
