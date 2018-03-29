@@ -10,6 +10,11 @@ VibrationDialog::VibrationDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowTitle("信号诊断");
+    //设置按钮圆角
+    //ui->btnRun->setStyleSheet("border-radius:10px;padding:2px 4px;");
+    //ui->btnStop->setStyleSheet("border-radius:10px;padding:2px 4px;");
+    //ui->btnHistory->setStyleSheet("border-radius:10px;padding:2px 4px;");
+   // ui->btnEval->setStyleSheet("border-radius:10px;padding:2px 4px;");
     // 关闭子窗口，返回主窗口
     connect(this,SIGNAL(rejected()),(Login*)parentWidget(),SLOT(show()));
 
