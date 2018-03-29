@@ -196,13 +196,13 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(170, 170, 127);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string>开始</string>
       </property>
       <property name="icon">
-       <iconset resource="resources.qrc">
+       <iconset>
         <normaloff>:/icons/rsc/开始.png</normaloff>:/icons/rsc/开始.png</iconset>
       </property>
      </widget>
@@ -218,13 +218,14 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(170, 170, 127);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);
+</string>
       </property>
       <property name="text">
        <string>停止</string>
       </property>
       <property name="icon">
-       <iconset resource="resources.qrc">
+       <iconset>
         <normaloff>:/icons/rsc/停止.png</normaloff>:/icons/rsc/停止.png</iconset>
       </property>
      </widget>
@@ -240,13 +241,13 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(170, 170, 127);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string>回放</string>
       </property>
       <property name="icon">
-       <iconset resource="resources.qrc">
+       <iconset>
         <normaloff>:/icons/rsc/历史.png</normaloff>:/icons/rsc/历史.png</iconset>
       </property>
      </widget>
@@ -262,13 +263,13 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(170, 170, 127);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string>诊断</string>
       </property>
       <property name="icon">
-       <iconset resource="resources.qrc">
+       <iconset>
         <normaloff>:/icons/rsc/评估.png</normaloff>:/icons/rsc/评估.png</iconset>
       </property>
      </widget>
@@ -864,7 +865,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="resources.qrc">:/images/robot.jpg</pixmap>
+    <pixmap>:/images/robot.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -878,8 +879,6 @@
    <header>figurecontrol.h</header>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="resources.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
