@@ -2,7 +2,6 @@
     <qresource prefix="/icons">
         <file>rsc/pause.png</file>
         <file>rsc/play.png</file>
-        <file>rsc/logo.png</file>
         <file>rsc/restart_icon.png</file>
         <file>rsc/shutdown_icon.png</file>
         <file>rsc/开始.png</file>
@@ -14,7 +13,8 @@
     </qresource>
     <qresource prefix="/images">
         <file>rsc/login_bg.png</file>
-        <file>rsc/心狗.png</file>
+        <file>rsc/robot.png</file>
+        <file>robot.png</file>
         <file>robot.jpg</file>
     </qresource>
 </RCC>

@@ -202,7 +202,7 @@
        <string>开始</string>
       </property>
       <property name="icon">
-       <iconset>
+       <iconset resource="resources.qrc">
         <normaloff>:/icons/rsc/开始.png</normaloff>:/icons/rsc/开始.png</iconset>
       </property>
      </widget>
@@ -225,7 +225,7 @@
        <string>停止</string>
       </property>
       <property name="icon">
-       <iconset>
+       <iconset resource="resources.qrc">
         <normaloff>:/icons/rsc/停止.png</normaloff>:/icons/rsc/停止.png</iconset>
       </property>
      </widget>
@@ -247,7 +247,7 @@
        <string>回放</string>
       </property>
       <property name="icon">
-       <iconset>
+       <iconset resource="resources.qrc">
         <normaloff>:/icons/rsc/历史.png</normaloff>:/icons/rsc/历史.png</iconset>
       </property>
      </widget>
@@ -269,7 +269,7 @@
        <string>诊断</string>
       </property>
       <property name="icon">
-       <iconset>
+       <iconset resource="resources.qrc">
         <normaloff>:/icons/rsc/评估.png</normaloff>:/icons/rsc/评估.png</iconset>
       </property>
      </widget>
@@ -855,22 +855,43 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>400</y>
-     <width>221</width>
-     <height>211</height>
+     <x>530</x>
+     <y>410</y>
+     <width>271</width>
+     <height>181</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>:/images/robot.jpg</pixmap>
+    <pixmap resource="resources.qrc">:/images/rsc/robot.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
   </widget>
+  <zorder>label_6</zorder>
+  <zorder>figureListWidget</zorder>
+  <zorder>label</zorder>
+  <zorder>verticalLayoutWidget_2</zorder>
+  <zorder>textFault</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line_3</zorder>
+  <zorder>line_4</zorder>
+  <zorder>line_5</zorder>
+  <zorder>line_6</zorder>
+  <zorder>line_7</zorder>
+  <zorder>line_8</zorder>
+  <zorder>line_9</zorder>
+  <zorder>line_10</zorder>
+  <zorder>line_11</zorder>
+  <zorder>line_12</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -879,6 +900,8 @@
    <header>figurecontrol.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
