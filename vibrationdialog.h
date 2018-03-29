@@ -47,10 +47,7 @@ private:
     QVector<double> noise;
 
 private slots:
-<<<<<<< HEAD
-=======
     //void switchPage(int index);
->>>>>>> master
     void getRealtimeData(QString);
     void onRunStopChanged(int run);
     void updatePlot();

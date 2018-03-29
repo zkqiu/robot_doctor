@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<RCC/>
-=======
 <RCC>
     <qresource prefix="/icons">
         <file>rsc/pause.png</file>
@@ -21,4 +18,3 @@
         <file>robot.jpg</file>
     </qresource>
 </RCC>
->>>>>>> master

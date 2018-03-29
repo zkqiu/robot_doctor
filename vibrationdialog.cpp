@@ -1,5 +1,7 @@
 #include "vibrationdialog.h"
 #include "ui_Vibrationdialog.h"
+#include "login.h"
+#include "ui_Login.h"
 #include "savefile.h"
 
 VibrationDialog::VibrationDialog(QWidget *parent) :
@@ -14,6 +16,7 @@ VibrationDialog::VibrationDialog(QWidget *parent) :
     //ui->btnHistory->setStyleSheet("border-radius:10px;padding:2px 4px;");
    // ui->btnEval->setStyleSheet("border-radius:10px;padding:2px 4px;");
     // 关闭子窗口，返回主窗口
+    connect(this,SIGNAL(rejected()),(Login*)parentWidget(),SLOT(show()));
 
     // 初始化传感器控制checkbox
     ui->VibrationSensor1->setFigureList(ui->figureListWidget);
@@ -171,6 +174,11 @@ void VibrationDialog::openHistory()
 void VibrationDialog::evalHealth()
 {/*
     QString faultstring=faultDetector.faultRule();
+    ui->radar->hlthy[0]=0.87;
+    ui->radar->hlthy[1]=0.55;
+    ui->radar->hlthy[2]=0.35;
+    ui->radar->hlthy[3]=0.76;
+    ui->radar->repaint();
     ui->textFault->setDocumentTitle("元件健康");
     QFont font("楷体",12,QFont::Normal);
     ui->textFault->setFont(font);

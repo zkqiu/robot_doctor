@@ -6,166 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1040</width>
-    <height>667</height>
+    <width>1041</width>
+    <height>663</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-<<<<<<< HEAD
-  <widget class="QWidget" name="widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>310</y>
-     <width>351</width>
-     <height>321</height>
-    </rect>
-   </property>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>341</width>
-      <height>321</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>通道选择</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
-    <widget class="QWidget" name="verticalLayoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>301</width>
-       <height>231</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <widget class="FigureControl" name="VibrationSensor1">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>振动传感器1</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="comboBox_1">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_4">
-        <item>
-         <widget class="FigureControl" name="VibrationSensor2">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>振动传感器2</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="comboBox_2">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_5">
-        <item>
-         <widget class="FigureControl" name="VibrationSensor3">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>振动传感器3</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="comboBox_3">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_6">
-        <item>
-         <widget class="FigureControl" name="NoiseSensor">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>噪声传感器</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="comboBox_4">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
-   </widget>
-=======
   <property name="styleSheet">
    <string notr="true">background-color: rgb(210, 226, 243);</string>
   </property>
@@ -321,30 +168,10 @@
    <property name="textInteractionFlags">
     <set>Qt::NoTextInteraction</set>
    </property>
->>>>>>> master
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
     <rect>
-<<<<<<< HEAD
-     <x>50</x>
-     <y>590</y>
-     <width>931</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QPushButton" name="btnRun">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="text">
-       <string>开始</string>
-=======
      <x>360</x>
      <y>410</y>
      <width>95</width>
@@ -377,35 +204,10 @@
       <property name="icon">
        <iconset resource="resources.qrc">
         <normaloff>:/icons/rsc/开始.png</normaloff>:/icons/rsc/开始.png</iconset>
->>>>>>> master
       </property>
      </widget>
     </item>
     <item>
-<<<<<<< HEAD
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnStop">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="text">
-       <string>停止</string>
-=======
      <widget class="QPushButton" name="btnStop">
       <property name="font">
        <font>
@@ -425,7 +227,6 @@
       <property name="icon">
        <iconset resource="resources.qrc">
         <normaloff>:/icons/rsc/停止.png</normaloff>:/icons/rsc/停止.png</iconset>
->>>>>>> master
       </property>
      </widget>
     </item>
@@ -442,20 +243,6 @@
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
-<<<<<<< HEAD
-     </spacer>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnHistory">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="text">
-       <string>回放</string>
-=======
       <property name="text">
        <string>回放</string>
       </property>
@@ -484,7 +271,6 @@
       <property name="icon">
        <iconset resource="resources.qrc">
         <normaloff>:/icons/rsc/评估.png</normaloff>:/icons/rsc/评估.png</iconset>
->>>>>>> master
       </property>
      </widget>
     </item>
@@ -532,17 +318,6 @@
      </layout>
     </item>
     <item>
-<<<<<<< HEAD
-     <spacer name="horizontalSpacer_3">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-=======
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
        <widget class="FigureControl" name="VibrationSensor2">
@@ -660,38 +435,11 @@
      <widget class="QListWidget" name="listWidget">
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 255, 255);</string>
->>>>>>> master
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnEval">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="text">
-       <string>诊断</string>
       </property>
      </widget>
     </item>
    </layout>
   </widget>
-<<<<<<< HEAD
-  <widget class="QGroupBox" name="groupBox_3">
-   <property name="geometry">
-    <rect>
-     <x>750</x>
-     <y>310</y>
-     <width>201</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>设置</string>
-=======
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
@@ -806,60 +554,10 @@
    </property>
    <property name="text">
     <string>信号采集与储存</string>
->>>>>>> master
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
-<<<<<<< HEAD
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-   <widget class="QWidget" name="verticalLayoutWidget_3">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>20</y>
-      <width>201</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <item>
-      <widget class="QComboBox" name="updatePeriod">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QDateEdit" name="dateEdit">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="groupBox_4">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>310</y>
-     <width>241</width>
-     <height>261</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>存储文件</string>
-=======
    <property name="wordWrap">
     <bool>true</bool>
    </property>
@@ -984,77 +682,10 @@
    </property>
    <property name="text">
     <string>健康诊断</string>
->>>>>>> master
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
-<<<<<<< HEAD
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-   <widget class="QListWidget" name="listWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>20</y>
-      <width>241</width>
-      <height>231</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QListWidget" name="figureListWidget">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1051</width>
-     <height>291</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QGroupBox" name="groupBox">
-   <property name="geometry">
-    <rect>
-     <x>750</x>
-     <y>410</y>
-     <width>201</width>
-     <height>151</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>诊断结果</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="flat">
-    <bool>true</bool>
-   </property>
-   <widget class="QTextEdit" name="textFault">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>20</y>
-      <width>201</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-   </widget>
-=======
    <property name="wordWrap">
     <bool>true</bool>
    </property>
@@ -1239,7 +870,6 @@
    <property name="scaledContents">
     <bool>true</bool>
    </property>
->>>>>>> master
   </widget>
   <zorder>label_6</zorder>
   <zorder>figureListWidget</zorder>
