@@ -10,7 +10,7 @@ Login::Login(QWidget *parent) :
     ui(new Ui::Login)
 {
     ui->setupUi(this);
-
+    ui->label_3->setText("机器人装配智能诊断系统");
     timer=new QTimer();
     connect(timer,SIGNAL(timeout()),this,SLOT(updateTime()));
     timer->start(1000);
@@ -42,7 +42,7 @@ void Login::on_loginButon_clicked()
 
     this->hide();
     DiagWindow=new VibrationDialog(this);
-    DiagWindow->setWindowTitle("机械臂健康诊断系统");
+    DiagWindow->setWindowTitle("机器人装配智能诊断系统");
     DiagWindow->show();
 }
 

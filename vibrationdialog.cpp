@@ -9,7 +9,7 @@ VibrationDialog::VibrationDialog(QWidget *parent) :
     ui(new Ui::VibrationDialog)
 {
     ui->setupUi(this);
-    setWindowTitle("信号诊断");
+    setWindowTitle("机器人装配智能诊断系统");
     //设置按钮圆角
     //ui->btnRun->setStyleSheet("border-radius:10px;padding:2px 4px;");
     //ui->btnStop->setStyleSheet("border-radius:10px;padding:2px 4px;");
@@ -130,7 +130,7 @@ void VibrationDialog::startSave()
     dt.setTime(currTime.currentTime());
     dt.setDate(currDate.currentDate());
     QString fileName=dt.toString("yyyy-MM-dd-hh-mm");
-    SaveFile *saveFile=new SaveFile("./vibration_data/"+fileName+"vibration.txt");
+    SaveFile *saveFile=new SaveFile("./vibration_data/"+fileName+"-vibration.txt");
     // 添加到ListWidget
     int row=ui->listWidget->count();
     QListWidgetItem *newFile = new QListWidgetItem;

@@ -8,7 +8,7 @@ QT       += core gui sql network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
-TARGET = first_gui
+TARGET = robot_doctor
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
