@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 245, 231);</string>
+  </property>
   <widget class="QListWidget" name="figureListWidget">
    <property name="geometry">
     <rect>
@@ -24,6 +27,9 @@
    </property>
    <property name="autoFillBackground">
     <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="resizeMode">
     <enum>QListView::Adjust</enum>
@@ -47,10 +53,19 @@
    <property name="palette">
     <palette>
      <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -59,7 +74,7 @@
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -67,10 +82,19 @@
       </colorrole>
      </active>
      <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -79,7 +103,7 @@
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -87,21 +111,30 @@
       </colorrole>
      </inactive>
      <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>240</red>
-         <green>240</green>
-         <blue>240</blue>
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
         </color>
        </brush>
       </colorrole>
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>240</red>
-         <green>240</green>
-         <blue>240</blue>
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
         </color>
        </brush>
       </colorrole>
@@ -115,7 +148,10 @@
     </font>
    </property>
    <property name="autoFillBackground">
-    <bool>true</bool>
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 0);</string>
    </property>
    <property name="text">
     <string>传感器设置</string>
@@ -159,8 +195,15 @@
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 170, 127);</string>
+      </property>
       <property name="text">
        <string>开始</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/rsc/开始.png</normaloff>:/icons/rsc/开始.png</iconset>
       </property>
      </widget>
     </item>
@@ -174,8 +217,15 @@
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 170, 127);</string>
+      </property>
       <property name="text">
        <string>停止</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/rsc/停止.png</normaloff>:/icons/rsc/停止.png</iconset>
       </property>
      </widget>
     </item>
@@ -189,8 +239,15 @@
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 170, 127);</string>
+      </property>
       <property name="text">
        <string>回放</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/rsc/历史.png</normaloff>:/icons/rsc/历史.png</iconset>
       </property>
      </widget>
     </item>
@@ -204,22 +261,19 @@
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 170, 127);</string>
+      </property>
       <property name="text">
        <string>诊断</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/rsc/评估.png</normaloff>:/icons/rsc/评估.png</iconset>
       </property>
      </widget>
     </item>
    </layout>
-  </widget>
-  <widget class="RadarWidget" name="radar" native="true">
-   <property name="geometry">
-    <rect>
-     <x>530</x>
-     <y>390</y>
-     <width>241</width>
-     <height>231</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QTextEdit" name="textFault">
    <property name="geometry">
@@ -229,6 +283,9 @@
      <width>221</width>
      <height>231</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -251,7 +308,11 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="comboBox_1"/>
+       <widget class="QComboBox" name="comboBox_1">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -265,7 +326,11 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="comboBox_2"/>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -279,7 +344,11 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="comboBox_3"/>
+       <widget class="QComboBox" name="comboBox_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -293,7 +362,11 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="comboBox_4"/>
+       <widget class="QComboBox" name="comboBox_4">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -326,6 +399,9 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
        </widget>
       </item>
      </layout>
@@ -347,12 +423,19 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
        </widget>
       </item>
      </layout>
     </item>
     <item>
-     <widget class="QListWidget" name="listWidget"/>
+     <widget class="QListWidget" name="listWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -368,10 +451,19 @@
    <property name="palette">
     <palette>
      <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -380,7 +472,7 @@
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -388,10 +480,19 @@
       </colorrole>
      </active>
      <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -400,7 +501,7 @@
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -408,21 +509,30 @@
       </colorrole>
      </inactive>
      <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>240</red>
-         <green>240</green>
-         <blue>240</blue>
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
         </color>
        </brush>
       </colorrole>
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>240</red>
-         <green>240</green>
-         <blue>240</blue>
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
         </color>
        </brush>
       </colorrole>
@@ -436,7 +546,10 @@
     </font>
    </property>
    <property name="autoFillBackground">
-    <bool>true</bool>
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 0);</string>
    </property>
    <property name="text">
     <string>信号采集与储存</string>
@@ -466,10 +579,19 @@
    <property name="palette">
     <palette>
      <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -478,7 +600,7 @@
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -486,10 +608,19 @@
       </colorrole>
      </active>
      <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -498,7 +629,7 @@
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>0</red>
+         <red>85</red>
          <green>170</green>
          <blue>0</blue>
         </color>
@@ -506,21 +637,30 @@
       </colorrole>
      </inactive>
      <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
       <colorrole role="Base">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>240</red>
-         <green>240</green>
-         <blue>240</blue>
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
         </color>
        </brush>
       </colorrole>
       <colorrole role="Window">
        <brush brushstyle="SolidPattern">
         <color alpha="255">
-         <red>240</red>
-         <green>240</green>
-         <blue>240</blue>
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
         </color>
        </brush>
       </colorrole>
@@ -534,7 +674,10 @@
     </font>
    </property>
    <property name="autoFillBackground">
-    <bool>true</bool>
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 0);</string>
    </property>
    <property name="text">
     <string>健康诊断</string>
@@ -571,7 +714,7 @@
      <x>40</x>
      <y>320</y>
      <width>16</width>
-     <height>331</height>
+     <height>341</height>
     </rect>
    </property>
    <property name="orientation">
@@ -582,7 +725,7 @@
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>640</y>
+     <y>650</y>
      <width>431</width>
      <height>20</height>
     </rect>
@@ -597,7 +740,7 @@
      <x>470</x>
      <y>320</y>
      <width>16</width>
-     <height>331</height>
+     <height>341</height>
     </rect>
    </property>
    <property name="orientation">
@@ -708,20 +851,35 @@
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>400</y>
+     <width>221</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/images/robot.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>RadarWidget</class>
-   <extends>QWidget</extends>
-   <header location="global">radarwidget.h</header>
-   <container>1</container>
-  </customwidget>
   <customwidget>
    <class>FigureControl</class>
    <extends>QCheckBox</extends>
    <header>figurecontrol.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
