@@ -38,6 +38,7 @@ private:
     double changeThreshold=1e-2;
     double Zthreshold=2e-2;
     double Xthreshold=5;//5mm displacement error
+    double amplititude_threshold=5;
 
     vector<double> testSignal;
 

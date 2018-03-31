@@ -58,6 +58,17 @@ bool Features::getIncrease()
     return increase;
 }
 
+bool Features::is_normal()
+{
+    vector<double>::size_type start=100;
+    double mean1,stdev1;
+    calStat(testSignal,start,mean1,stdev1);
+    if (mean1>amplititude_threshold)
+        return false;
+    else
+        return true;
+}
+
 bool Features::getDecrease()
 {
     return decrease;

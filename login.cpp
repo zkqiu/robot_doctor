@@ -10,7 +10,7 @@ Login::Login(QWidget *parent) :
     ui(new Ui::Login)
 {
     ui->setupUi(this);
-    //ui->robot_label->setText("label4");
+    //ui->label_4->setText("label4");
     ui->label_3->setText("机器人装配智能诊断系统");
     timer=new QTimer();
     connect(timer,SIGNAL(timeout()),this,SLOT(updateTime()));
