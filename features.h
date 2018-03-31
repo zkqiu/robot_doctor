@@ -35,12 +35,14 @@ public:
 
 private:
     int N=100;
+    int nfft=1024;
     double changeThreshold=1e-2;
     double Zthreshold=2e-2;
     double Xthreshold=5;//5mm displacement error
     double amplititude_threshold=5;
 
     vector<double> testSignal;
+    vector<double> fftSignal;
 
     bool unchanged=false;
     bool increase=false;
@@ -56,6 +58,8 @@ private:
 
     bool lessThanZero=false;
     void Check_lessThanZero();
+
+//    void fft();
 
 };
 

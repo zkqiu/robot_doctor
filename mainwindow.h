@@ -1,5 +1,5 @@
-#ifndef Login_H
-#define Login_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QMainWindow>
 #include <QtSql>
@@ -11,16 +11,16 @@
 #include "vibrationdialog.h"
 
 namespace Ui {
-class Login;
+class MainWindow;
 }
 
-class Login : public QMainWindow
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit Login(QWidget *parent = 0);
-    ~Login();
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
 
 private slots:
     void on_loginButon_clicked();
@@ -30,10 +30,11 @@ private slots:
     void updateTime();
 
 private:
-    Ui::Login *ui;
+    Ui::MainWindow *ui;
     VibrationDialog *DiagWindow;
     QSqlDatabase db;
     QTimer *timer;
 };
 
-#endif // Login_H
+
+#endif // MAINWINDOW_H
