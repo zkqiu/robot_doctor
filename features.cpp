@@ -58,6 +58,17 @@ bool Features::getIncrease()
     return increase;
 }
 
+bool Features::is_normal()
+{
+    vector<double>::size_type start=100;
+    double mean1,stdev1;
+    calStat(testSignal,start,mean1,stdev1);
+    if (mean1>amplititude_threshold)
+        return false;
+    else
+        return true;
+}
+
 bool Features::getDecrease()
 {
     return decrease;
@@ -191,3 +202,34 @@ void calStat(const vector<double> &x,vector<double>::size_type start,double &mea
     stdev=sqrt(accum/(N-1));
 //    qDebug()<<"mean:"<<mean<<"Standard deveration:"<<stdev<<endl;
 }
+
+//void Features::fft(const vector<double> &x,vector<double>::size_type start,int length,int sign)
+//{
+//    int i,j,k,step,length;
+//    complex<double> wn,temp,deltawn;
+
+//    for(vector<double>::size_type i=0;i<N;i+=2)
+//    {
+//       temp=x[i];
+//       x[i]=x[i]+x[i+1];
+//       Data[i+1]=temp-Data[i+1];
+//    }
+//    for(vector<double>::size_type i=2;i<nfft;i++)
+//    {
+//       wn=1;step=1<<int(i);
+//       deltawnc=cos(2.0*pi/step),sin(sign*2.0*pi/step));
+//       for(j=0;j<step/2;j++)
+//       {
+//         for(i=0;i<length/step;i++)
+//         {
+//            temp=Data[i*step+step/2+j]*wn;
+//            Data[i*step+step/2+j]=Data[i*step+j]-temp;
+//            Data[i*step+j]=Data[i*step+j]+temp;
+//          }
+//          wn=wn*deltawn;
+//       }
+//    }
+//    if(sign==1)
+//    for(i=0;i<length;i++)
+//      Data[i]/=length;
+//}

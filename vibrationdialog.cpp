@@ -1,7 +1,7 @@
 #include "vibrationdialog.h"
 #include "ui_Vibrationdialog.h"
-#include "login.h"
-#include "ui_Login.h"
+#include "mainwindow.h".h"
+#include "ui_mainwindow.h"
 #include "savefile.h"
 
 VibrationDialog::VibrationDialog(QWidget *parent) :
@@ -16,7 +16,7 @@ VibrationDialog::VibrationDialog(QWidget *parent) :
     //ui->btnHistory->setStyleSheet("border-radius:10px;padding:2px 4px;");
    // ui->btnEval->setStyleSheet("border-radius:10px;padding:2px 4px;");
     // 关闭子窗口，返回主窗口
-    connect(this,SIGNAL(rejected()),(Login*)parentWidget(),SLOT(show()));
+    connect(this,SIGNAL(rejected()),(MainWindow*)parentWidget(),SLOT(show()));
 
     // 初始化传感器控制checkbox
     ui->VibrationSensor1->setFigureList(ui->figureListWidget);
