@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#
+background-color: rgb(170, 255, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="topPanel" native="true">
     <property name="geometry">
@@ -167,10 +171,10 @@ rgb(0, 170, 127); }</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>130</y>
-      <width>271</width>
-      <height>191</height>
+      <x>320</x>
+      <y>100</y>
+      <width>401</width>
+      <height>231</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -211,7 +215,7 @@ rgb(0, 170, 127); }</string>
      </size>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">#verticalLayout_2{border:2px solid rgb(170,170,127);border-radius:10}</string>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <property name="leftMargin">
@@ -427,7 +431,7 @@ rgb(0, 170, 127); }</string>
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>26</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>
