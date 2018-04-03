@@ -171,10 +171,10 @@ rgb(0, 170, 127); }</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>100</y>
-      <width>401</width>
-      <height>231</height>
+      <x>390</x>
+      <y>70</y>
+      <width>301</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -187,7 +187,7 @@ rgb(0, 170, 127); }</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources.qrc">:/images/rsc/robot.png</pixmap>
+     <pixmap resource="resources.qrc">:/images/rsc/new_robot.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

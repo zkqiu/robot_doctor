@@ -292,21 +292,23 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>70</y>
+      <y>30</y>
       <width>251</width>
-      <height>191</height>
+      <height>251</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources.qrc">:/images/rsc/robot.png</pixmap>
+     <pixmap resource="resources.qrc">:/images/rsc/new_robot.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
+   <zorder>label_6</zorder>
+   <zorder>textFault</zorder>
   </widget>
   <widget class="QGroupBox" name="groupBox_4">
    <property name="geometry">
@@ -334,7 +336,7 @@
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -344,6 +346,20 @@
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string> 保存数据</string>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="QPushButton" name="btnRun">
        <property name="sizePolicy">
@@ -460,6 +476,11 @@
     </layout>
    </widget>
   </widget>
+  <zorder>figureListWidget</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>groupBox_2</zorder>
+  <zorder>groupBox_4</zorder>
+  <zorder>groupBox_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>

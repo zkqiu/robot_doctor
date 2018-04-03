@@ -16,5 +16,6 @@
         <file>rsc/robot.png</file>
         <file>robot.png</file>
         <file>robot.jpg</file>
+        <file>rsc/new_robot.png</file>
     </qresource>
 </RCC>
