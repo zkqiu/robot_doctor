@@ -124,24 +124,31 @@ void VibrationDialog::updatePeriod(QString text)
 void VibrationDialog::startSave()
 {
     // 创建并运行保存文件子线程
-    QDateTime dt;
-    QTime currTime;
-    QDate currDate;
-    dt.setTime(currTime.currentTime());
-    dt.setDate(currDate.currentDate());
-    QString fileName=dt.toString("yyyy-MM-dd-hh-mm");
-    SaveFile *saveFile=new SaveFile("./vibration_data/"+fileName+"-vibration.txt");
-    // 添加到ListWidget
-    int row=ui->listWidget->count();
-    QListWidgetItem *newFile = new QListWidgetItem;
-    newFile->setText(fileName);
-    ui->listWidget->insertItem(row+1, newFile);
-    // 写采集到的数据到文件
-    saveFile->moveToThread(fileThread);
-    connect(clientThread,SIGNAL(dataAcquired(QString)),saveFile,SLOT(saveRealtimeData(QString)),Qt::QueuedConnection);
-    fileThread->start();
-    // 文件子线程ID，用于调试
-    //qDebug()<<"fileThread id is "<<fileThread->currentThreadId();
+    if(ui->checkBox->isChecked())
+    {
+//        qDebug()<<"is checked";
+        QDateTime dt;
+        QTime currTime;
+        QDate currDate;
+        dt.setTime(currTime.currentTime());
+        dt.setDate(currDate.currentDate());
+        QString fileName=dt.toString("yyyy-MM-dd-hh-mm");
+        SaveFile *saveFile=new SaveFile("./vibration_data/"+fileName+"-vibration.txt");
+        // 添加到ListWidget
+        int row=ui->listWidget->count();
+        QListWidgetItem *newFile = new QListWidgetItem;
+        newFile->setText(fileName);
+        ui->listWidget->insertItem(row+1, newFile);
+        // 写采集到的数据到文件
+        saveFile->moveToThread(fileThread);
+        connect(clientThread,SIGNAL(dataAcquired(QString)),saveFile,SLOT(saveRealtimeData(QString)),Qt::QueuedConnection);
+        fileThread->start();
+        // 文件子线程ID，用于调试
+        //qDebug()<<"fileThread id is "<<fileThread->currentThreadId();
+    }
+    else
+    {//qDebug()<<"not checked";
+    }
 }
 
 void VibrationDialog::openHistory()
