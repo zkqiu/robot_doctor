@@ -133,7 +133,7 @@ void VibrationDialog::startSave()
         dt.setTime(currTime.currentTime());
         dt.setDate(currDate.currentDate());
         QString fileName=dt.toString("yyyy-MM-dd-hh-mm");
-        SaveFile *saveFile=new SaveFile("./vibration_data/"+fileName+"-vibration.txt");
+        SaveFile *saveFile=new SaveFile(fileName+"-vibration.txt");
         // 添加到ListWidget
         int row=ui->listWidget->count();
         QListWidgetItem *newFile = new QListWidgetItem;
