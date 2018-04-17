@@ -375,20 +375,6 @@
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox">
-       <property name="font">
-        <font>
-         <family>楷体</family>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string> 保存数据</string>
-       </property>
-      </widget>
-     </item>
-     <item>
       <widget class="QPushButton" name="btnStop">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
