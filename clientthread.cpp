@@ -50,13 +50,9 @@ void ClientThread::getTcpData()
 
     while(edchar!='@')
     {
-        qDebug()<<"send successfully";
-
 
         tcpSocket->waitForReadyRead(100);
         int value=tcpSocket->bytesAvailable();
-
-        qDebug()<<value;
 
         char buf2[value];
         tcpSocket->read(buf2,value);
@@ -73,12 +69,12 @@ void ClientThread::getTcpData()
             }
 
             str=str+bufstr;
-            qDebug()<<bufstr.c_str();
         }
 
 
 
     }
+    str=str.substr(0,str.length()-1);
     int lenstr=str.size();
     char buf3[lenstr];
     int i=0;
@@ -88,8 +84,8 @@ void ClientThread::getTcpData()
         i++;
     }
     //将TCP缓存数据转换成字符串
-    QString qstr(buf3);/**/
-    qDebug()<<"send successfully";
+    QString qstr(buf3);
+    qDebug()<<buf3<<"send successfully";
     //发送数据给主线程
 
     emit dataAcquired(qstr);
@@ -133,7 +129,7 @@ void ClientThread::dataConvert(QString dataStr, QVector<double> &timeStramp, QVe
                 value2.push_back(atof(subs.c_str()));
                 break;
             case 4:
-                  value3.push_back(atof(subs.c_str()));
+                value3.push_back(atof(subs.c_str()));
                 break;
             case 5:
                 value4.push_back(atof(subs.c_str()));

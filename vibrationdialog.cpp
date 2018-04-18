@@ -1,6 +1,6 @@
 #include "vibrationdialog.h"
 #include "ui_Vibrationdialog.h"
-#include "mainwindow.h".h"
+#include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "savefile.h"
 

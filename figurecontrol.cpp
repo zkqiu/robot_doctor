@@ -95,7 +95,7 @@ void FigureControl::setPlot(QCustomPlot *figure)
     //figureBoom->graph(0)->setLineStyle(QCPGraph::lsLine);
     //figure->graph(0)->setName("压力 P1");
     // Set ranges
-    figure->yAxis->setRange(0,10);
+    figure->yAxis->setRange(-5,5);
 //    figureBoom->graph(0)->rescaleValueAxis();
     // Set label
     figure->xAxis->setLabel("时间 (s)");
@@ -142,7 +142,7 @@ void FigureControl::updatePlot()
 void FigureControl::setCombox(QComboBox *ui_combox)
 {
     comBox=ui_combox;
-    comBox->addItems(QStringList() << "0~10V (电压)"<<"-5~5V (电压)" << "4~20mA (电流)");
+    comBox->addItems(QStringList() << "-5~5V (电压)"<<"-2.5~2.5V (电压)" << "-1~1 (电压)");
     connect(comBox,SIGNAL(currentIndexChanged(int)),this,SLOT(setPlotRange(int)));
 }
 
@@ -177,14 +177,14 @@ void FigureControl::setPlotRange(int index)
     {
         switch(index)
         {
-        case 0/*"0~10V (电压)"*/:
-            figure->graph(0)->valueAxis()->setRange(0,10);
-            break;
-        case 1/*"-5~5V (电压)"*/:
+        case 0/*"-5~5V (电压)"*/:
             figure->graph(0)->valueAxis()->setRange(-5,5);
             break;
-        case 2/*"4~20mA (电流)"*/:
-            figure->graph(0)->valueAxis()->setRange(4,20);
+        case 1/*"-2.5~2.5V (电压)"*/:
+            figure->graph(0)->valueAxis()->setRange(-2.5,2.5);
+            break;
+        case 2/*"-1~1 (电压)"*/:
+            figure->graph(0)->valueAxis()->setRange(-1,1);
             break;
         }
         figure->replot();
