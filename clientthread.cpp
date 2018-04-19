@@ -48,7 +48,7 @@ void ClientThread::getTcpData()
 
 
 
-    while(edchar!='@')
+    while(edchar!='~')
     {
 
         tcpSocket->waitForReadyRead(100);
@@ -74,7 +74,6 @@ void ClientThread::getTcpData()
 
 
     }
-    str=str.substr(0,str.length()-1);
     int lenstr=str.size();
     char buf3[lenstr];
     int i=0;
@@ -132,6 +131,7 @@ void ClientThread::dataConvert(QString dataStr, QVector<double> &timeStramp, QVe
                 value3.push_back(atof(subs.c_str()));
                 break;
             case 5:
+                subs=subs.substr(0,subs.length()-1);
                 value4.push_back(atof(subs.c_str()));
                break;
             default:

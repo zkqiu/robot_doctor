@@ -1,0 +1,8 @@
+LIBRARY libmyFunc
+EXPORTS
+libmyFuncInitialize
+libmyFuncInitializeWithHandlers
+libmyFuncTerminate
+libmyFuncPrintStackTrace
+mlxMy_fft
+

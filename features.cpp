@@ -23,6 +23,7 @@ Features::Features(const vector<double> &P)
 
 void Features::setSignal(const vector<double> &P)
 {
+    testSignal.clear();
     for (unsigned int i = 0; i < P.size(); ++i)
     {
          testSignal.push_back(P[i]);
