@@ -48,7 +48,7 @@ HEADERS  += \
     features.h \
     figurecontrol.h \
     vibrationdialog.h \
-    mainwindow.h
+    mainwindow.h \
 
 FORMS    += \
     vibrationdialog.ui \
@@ -67,5 +67,3 @@ RESOURCES += \
 #macx:QMAKE_POST_LINK += cp ../lib/libchartdir.6.dylib \"`dirname $(TARGET)`/../Frameworks\";
 #macx:QMAKE_POST_LINK += install_name_tool -change libchartdir.6.dylib \
 #     \@loader_path/../Frameworks/libchartdir.6.dylib \"$(TARGET)\";
-
-DISTFILES +=

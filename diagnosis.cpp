@@ -74,6 +74,7 @@ bool Diagnosis::getSensorData(const string &fileName)
     V3_feature.setSignal(V3_);
     N_feature.setSignal(N_);
     qDebug()<<"数据已存入";
+    qDebug()<<time_<<endl<<V1_<<endl<<V2_<<endl<<V3_<<endl<<N_;
     return true;
 }
 

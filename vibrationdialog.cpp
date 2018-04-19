@@ -124,9 +124,12 @@ void VibrationDialog::updatePeriod(QString text)
 void VibrationDialog::startSave()
 {
     // 创建并运行保存文件子线程
+<<<<<<< HEAD
     //if(ui->checkBox->isChecked())
     //{
 //        qDebug()<<"is checked";
+=======
+>>>>>>> log
         QDateTime dt;
         QTime currTime;
         QDate currDate;
@@ -145,10 +148,13 @@ void VibrationDialog::startSave()
         fileThread->start();
         // 文件子线程ID，用于调试
         //qDebug()<<"fileThread id is "<<fileThread->currentThreadId();
+<<<<<<< HEAD
    // }
    // else
    // {//qDebug()<<"not checked";
    // }
+=======
+>>>>>>> log
 }
 
 void VibrationDialog::openHistory()
@@ -170,7 +176,7 @@ void VibrationDialog::openHistory()
     vibration3=QVector<double>::fromStdVector(V3);
     noise=QVector<double>::fromStdVector(N);
 
-    qDebug()<<time_stramp[1]<<vibration1[1]<<vibration2[1]<<vibration3[1]<<noise[1]<<endl;
+    qDebug()<<time_stramp<<vibration1<<vibration2<<vibration3<<noise<<endl;
     // 添加数据，重新绘图
     ui->VibrationSensor1->setPlotData(time_stramp,vibration1);
     ui->VibrationSensor2->setPlotData(time_stramp,vibration2);
