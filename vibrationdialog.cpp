@@ -169,14 +169,21 @@ void VibrationDialog::openHistory()
     vector<double> V2=faultDetector.getVibration2();
     vector<double> V3=faultDetector.getVibration3();
     vector<double> N=faultDetector.getNoise();
-    //    qDebug()<<t[1]<<P1[1]<<P2[1]<<endl;
+    qDebug()<<t.size()<<endl
+           <<V1.size()<<endl<<
+             V2.size()<<endl<<
+             V3.size()<<endl<<
+             N.size()<<endl;
     time_stramp=QVector<double>::fromStdVector(t);
     vibration1=QVector<double>::fromStdVector(V1);
     vibration2=QVector<double>::fromStdVector(V2);
     vibration3=QVector<double>::fromStdVector(V3);
     noise=QVector<double>::fromStdVector(N);
 
-    qDebug()<<time_stramp<<vibration1<<vibration2<<vibration3<<noise<<endl;
+    qDebug()<<time_stramp<<endl<<
+              vibration1<<endl<<
+              vibration2<<endl<<
+              vibration3<<endl<<noise<<endl;
     // 添加数据，重新绘图
     ui->VibrationSensor1->setPlotData(time_stramp,vibration1);
     ui->VibrationSensor2->setPlotData(time_stramp,vibration2);
