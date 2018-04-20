@@ -74,6 +74,7 @@ void ClientThread::getTcpData()
 
 
     }
+    str=str.substr(0,str.length()-2);
     int lenstr=str.size();
     char buf3[lenstr];
     int i=0;
