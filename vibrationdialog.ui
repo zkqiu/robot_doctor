@@ -66,7 +66,7 @@
     <string>传感器选择</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
@@ -179,7 +179,7 @@
     <string>信号采集与储存</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
@@ -273,7 +273,7 @@
     <string>健康诊断</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
    <widget class="QTextEdit" name="textFault">
     <property name="geometry">
@@ -334,7 +334,7 @@
     <string>控制</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">

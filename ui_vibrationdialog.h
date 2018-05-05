@@ -92,7 +92,7 @@ public:
         groupBox->setFont(font);
         groupBox->setStyleSheet(QLatin1String("#groupBox\n"
 "{border:2px solid rgb(170,170,127);border-radius:10}"));
-        groupBox->setAlignment(Qt::AlignCenter);
+        groupBox->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         layoutWidget = new QWidget(groupBox);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
         layoutWidget->setGeometry(QRect(10, 30, 221, 161));
@@ -170,7 +170,7 @@ public:
         groupBox_2->setStyleSheet(QLatin1String("#groupBox_2{border:2px solid rgb(170,170,127);border-radius:10}\n"
 "\n"
 ""));
-        groupBox_2->setAlignment(Qt::AlignCenter);
+        groupBox_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         layoutWidget1 = new QWidget(groupBox_2);
         layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
         layoutWidget1->setGeometry(QRect(10, 30, 258, 252));
@@ -230,7 +230,7 @@ public:
         groupBox_3->setGeometry(QRect(340, 320, 521, 301));
         groupBox_3->setFont(font);
         groupBox_3->setStyleSheet(QStringLiteral("#groupBox_3{border:2px solid rgb(170,170,127);border-radius:10}"));
-        groupBox_3->setAlignment(Qt::AlignCenter);
+        groupBox_3->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         textFault = new QTextEdit(groupBox_3);
         textFault->setObjectName(QStringLiteral("textFault"));
         textFault->setGeometry(QRect(270, 40, 221, 241));
@@ -247,7 +247,7 @@ public:
         groupBox_4->setGeometry(QRect(900, 320, 121, 301));
         groupBox_4->setFont(font);
         groupBox_4->setStyleSheet(QStringLiteral("#groupBox_4{border:2px solid rgb(170,170,127);border-radius:10}"));
-        groupBox_4->setAlignment(Qt::AlignCenter);
+        groupBox_4->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         layoutWidget2 = new QWidget(groupBox_4);
         layoutWidget2->setObjectName(QStringLiteral("layoutWidget2"));
         layoutWidget2->setGeometry(QRect(10, 30, 106, 251));
