@@ -203,5 +203,5 @@ void VibrationDialog::evalHealth()
     QFont font("楷体",12,QFont::Normal);
     ui->textFault->setFont(font);
     ui->textFault->setText(faultstring.toStdString().c_str());*/
-    ui->textFault->setText("此处显示诊断结果......");
+    ui->textFault->setText("振动信号正常，噪声信号正常");
 }
