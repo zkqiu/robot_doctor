@@ -13,7 +13,6 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDateEdit>
 #include <QtWidgets/QGroupBox>
@@ -64,7 +63,6 @@ public:
     QGroupBox *groupBox_4;
     QWidget *layoutWidget2;
     QVBoxLayout *verticalLayout_2;
-    QCheckBox *checkBox;
     QPushButton *btnRun;
     QPushButton *btnStop;
     QPushButton *btnHistory;
@@ -94,7 +92,7 @@ public:
         groupBox->setFont(font);
         groupBox->setStyleSheet(QLatin1String("#groupBox\n"
 "{border:2px solid rgb(170,170,127);border-radius:10}"));
-        groupBox->setAlignment(Qt::AlignCenter);
+        groupBox->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         layoutWidget = new QWidget(groupBox);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
         layoutWidget->setGeometry(QRect(10, 30, 221, 161));
@@ -172,7 +170,7 @@ public:
         groupBox_2->setStyleSheet(QLatin1String("#groupBox_2{border:2px solid rgb(170,170,127);border-radius:10}\n"
 "\n"
 ""));
-        groupBox_2->setAlignment(Qt::AlignCenter);
+        groupBox_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         layoutWidget1 = new QWidget(groupBox_2);
         layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
         layoutWidget1->setGeometry(QRect(10, 30, 258, 252));
@@ -232,7 +230,7 @@ public:
         groupBox_3->setGeometry(QRect(340, 320, 521, 301));
         groupBox_3->setFont(font);
         groupBox_3->setStyleSheet(QStringLiteral("#groupBox_3{border:2px solid rgb(170,170,127);border-radius:10}"));
-        groupBox_3->setAlignment(Qt::AlignCenter);
+        groupBox_3->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         textFault = new QTextEdit(groupBox_3);
         textFault->setObjectName(QStringLiteral("textFault"));
         textFault->setGeometry(QRect(270, 40, 221, 241));
@@ -249,23 +247,13 @@ public:
         groupBox_4->setGeometry(QRect(900, 320, 121, 301));
         groupBox_4->setFont(font);
         groupBox_4->setStyleSheet(QStringLiteral("#groupBox_4{border:2px solid rgb(170,170,127);border-radius:10}"));
-        groupBox_4->setAlignment(Qt::AlignCenter);
+        groupBox_4->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         layoutWidget2 = new QWidget(groupBox_4);
         layoutWidget2->setObjectName(QStringLiteral("layoutWidget2"));
-        layoutWidget2->setGeometry(QRect(10, 30, 101, 251));
+        layoutWidget2->setGeometry(QRect(10, 30, 106, 251));
         verticalLayout_2 = new QVBoxLayout(layoutWidget2);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        checkBox = new QCheckBox(layoutWidget2);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("\346\245\267\344\275\223"));
-        font1.setBold(true);
-        font1.setWeight(75);
-        checkBox->setFont(font1);
-
-        verticalLayout_2->addWidget(checkBox);
-
         btnRun = new QPushButton(layoutWidget2);
         btnRun->setObjectName(QStringLiteral("btnRun"));
         QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Preferred);
@@ -273,12 +261,12 @@ public:
         sizePolicy2.setVerticalStretch(0);
         sizePolicy2.setHeightForWidth(btnRun->sizePolicy().hasHeightForWidth());
         btnRun->setSizePolicy(sizePolicy2);
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("\346\245\267\344\275\223"));
-        font2.setPointSize(11);
-        font2.setBold(true);
-        font2.setWeight(75);
-        btnRun->setFont(font2);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("\346\245\267\344\275\223"));
+        font1.setPointSize(11);
+        font1.setBold(true);
+        font1.setWeight(75);
+        btnRun->setFont(font1);
         btnRun->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/icons/rsc/\345\274\200\345\247\213.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -293,7 +281,7 @@ public:
         sizePolicy3.setVerticalStretch(0);
         sizePolicy3.setHeightForWidth(btnStop->sizePolicy().hasHeightForWidth());
         btnStop->setSizePolicy(sizePolicy3);
-        btnStop->setFont(font2);
+        btnStop->setFont(font1);
         btnStop->setStyleSheet(QLatin1String("background-color: rgb(255, 255, 255);\n"
 ""));
         QIcon icon1;
@@ -306,7 +294,7 @@ public:
         btnHistory->setObjectName(QStringLiteral("btnHistory"));
         sizePolicy3.setHeightForWidth(btnHistory->sizePolicy().hasHeightForWidth());
         btnHistory->setSizePolicy(sizePolicy3);
-        btnHistory->setFont(font2);
+        btnHistory->setFont(font1);
         btnHistory->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
         QIcon icon2;
         icon2.addFile(QString::fromUtf8(":/icons/rsc/\345\216\206\345\217\262.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -318,7 +306,7 @@ public:
         btnEval->setObjectName(QStringLiteral("btnEval"));
         sizePolicy3.setHeightForWidth(btnEval->sizePolicy().hasHeightForWidth());
         btnEval->setSizePolicy(sizePolicy3);
-        btnEval->setFont(font2);
+        btnEval->setFont(font1);
         btnEval->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
         QIcon icon3;
         icon3.addFile(QString::fromUtf8(":/icons/rsc/\350\257\204\344\274\260.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -351,7 +339,6 @@ public:
         groupBox_3->setTitle(QApplication::translate("VibrationDialog", "\345\201\245\345\272\267\350\257\212\346\226\255", nullptr));
         label_6->setText(QString());
         groupBox_4->setTitle(QApplication::translate("VibrationDialog", "\346\216\247\345\210\266", nullptr));
-        checkBox->setText(QApplication::translate("VibrationDialog", " \344\277\235\345\255\230\346\225\260\346\215\256", nullptr));
         btnRun->setText(QApplication::translate("VibrationDialog", "\345\274\200\345\247\213", nullptr));
         btnStop->setText(QApplication::translate("VibrationDialog", "\345\201\234\346\255\242", nullptr));
         btnHistory->setText(QApplication::translate("VibrationDialog", "\345\233\236\346\224\276", nullptr));

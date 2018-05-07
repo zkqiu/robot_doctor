@@ -63,7 +63,7 @@ void SaveFile::saveRealtimeData(QString dataStr)
 //               subs4.push_back(atof(subs.c_str()));
                 break;
             case 5:
-                  subs5=subs;
+                  subs5=subs.substr(0,subs.length()-1);
 //               subs5.push_back(atof(subs.c_str()));
                if(subs1.c_str()!="" && subs1.length()>5)
                out<<subs1.c_str()<<" "<<subs2.c_str()<<" "<<subs3.c_str()<<" "<<subs4.c_str()<<" "<<subs5.c_str()<<"\n";

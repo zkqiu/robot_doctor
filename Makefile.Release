@@ -5685,6 +5685,18 @@ release/vibrationdialog.o: vibrationdialog.cpp vibrationdialog.h \
 		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtNetwork/qabstractsocket.h \
 		diagnosis.h \
 		features.h \
+		ui_Vibrationdialog.h \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QAction \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QApplication \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QButtonGroup \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QComboBox \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QDateEdit \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QGroupBox \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QHBoxLayout \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QHeaderView \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QPushButton \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QTextEdit \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QVBoxLayout \
 		mainwindow.h \
 		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
 		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtSql/QtSql \
@@ -5706,7 +5718,14 @@ release/vibrationdialog.o: vibrationdialog.cpp vibrationdialog.h \
 		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtSql/qtsqlversion.h \
 		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtSql/QSqlDatabase \
 		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtSql/QSqlQuery \
-		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QMessageBox
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
+		ui_mainwindow.h \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QLineEdit \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QMenuBar \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QSpacerItem \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QStatusBar \
+		savefile.h \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtCore/QFile
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\vibrationdialog.o vibrationdialog.cpp
 
 release/mainwindow.o: mainwindow.cpp mainwindow.h \
@@ -6244,6 +6263,17 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		diagnosis.h \
 		features.h \
 		ui_mainwindow.h \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QAction \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QApplication \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QButtonGroup \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QHBoxLayout \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QHeaderView \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QLineEdit \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QMenuBar \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QPushButton \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QSpacerItem \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QStatusBar \
+		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtCore/QTime \
 		E:/ProgramFiles/Qt/5.10.1/mingw53_32/include/QtCore/QDate
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o mainwindow.cpp

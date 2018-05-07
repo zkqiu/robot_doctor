@@ -124,9 +124,12 @@ void VibrationDialog::updatePeriod(QString text)
 void VibrationDialog::startSave()
 {
     // 创建并运行保存文件子线程
+<<<<<<< HEAD
     //if(ui->checkBox->isChecked())
     //{
 //        qDebug()<<"is checked";
+=======
+>>>>>>> log
         QDateTime dt;
         QTime currTime;
         QDate currDate;
@@ -145,10 +148,13 @@ void VibrationDialog::startSave()
         fileThread->start();
         // 文件子线程ID，用于调试
         //qDebug()<<"fileThread id is "<<fileThread->currentThreadId();
+<<<<<<< HEAD
    // }
    // else
    // {//qDebug()<<"not checked";
    // }
+=======
+>>>>>>> log
 }
 
 void VibrationDialog::openHistory()
@@ -163,14 +169,21 @@ void VibrationDialog::openHistory()
     vector<double> V2=faultDetector.getVibration2();
     vector<double> V3=faultDetector.getVibration3();
     vector<double> N=faultDetector.getNoise();
-    //    qDebug()<<t[1]<<P1[1]<<P2[1]<<endl;
+    qDebug()<<t.size()<<endl
+           <<V1.size()<<endl<<
+             V2.size()<<endl<<
+             V3.size()<<endl<<
+             N.size()<<endl;
     time_stramp=QVector<double>::fromStdVector(t);
     vibration1=QVector<double>::fromStdVector(V1);
     vibration2=QVector<double>::fromStdVector(V2);
     vibration3=QVector<double>::fromStdVector(V3);
     noise=QVector<double>::fromStdVector(N);
 
-    qDebug()<<time_stramp[1]<<vibration1[1]<<vibration2[1]<<vibration3[1]<<noise[1]<<endl;
+    qDebug()<<time_stramp<<endl<<
+              vibration1<<endl<<
+              vibration2<<endl<<
+              vibration3<<endl<<noise<<endl;
     // 添加数据，重新绘图
     ui->VibrationSensor1->setPlotData(time_stramp,vibration1);
     ui->VibrationSensor2->setPlotData(time_stramp,vibration2);
@@ -190,5 +203,5 @@ void VibrationDialog::evalHealth()
     QFont font("楷体",12,QFont::Normal);
     ui->textFault->setFont(font);
     ui->textFault->setText(faultstring.toStdString().c_str());*/
-    ui->textFault->setText("此处显示诊断结果......");
+    ui->textFault->setText("振动信号正常，噪声信号正常");
 }
