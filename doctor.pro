@@ -24,31 +24,7 @@ DEFINES += QT_DEPRECATED_WARNINGS\
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 
-SOURCES += main.cpp\
-    qcustomplot.cpp \
-    qcustomlabel.cpp \
-    clientthread.cpp \
-    savefile.cpp \
-    radarwidget.cpp \
-    diagnosis.cpp \
-    features.cpp \
-    figurecontrol.cpp \
-    vibrationdialog.cpp \
-    mainwindow.cpp
 
-HEADERS  += \
-    swingcircuitdialog.h \
-    travelcircuitdialog.h \
-    qcustomplot.h \
-    qcustomlabel.h \
-    clientthread.h \
-    savefile.h \
-    radarwidget.h \
-    diagnosis.h \
-    features.h \
-    figurecontrol.h \
-    vibrationdialog.h \
-    mainwindow.h \
 
 FORMS    += \
     vibrationdialog.ui \
@@ -67,3 +43,49 @@ RESOURCES += \
 #macx:QMAKE_POST_LINK += cp ../lib/libchartdir.6.dylib \"`dirname $(TARGET)`/../Frameworks\";
 #macx:QMAKE_POST_LINK += install_name_tool -change libchartdir.6.dylib \
 #     \@loader_path/../Frameworks/libchartdir.6.dylib \"$(TARGET)\";
+
+win32: LIBS += -L$$PWD/my_add/for_redistribution_files_only/ -lmy_add
+
+INCLUDEPATH += $$PWD/my_add/for_redistribution_files_only
+DEPENDPATH += $$PWD/my_add/for_redistribution_files_only
+
+# .h文件搜索路径
+INCLUDEPATH += D:/SoftwareInstall/Matlab2017b/extern/include
+INCLUDEPATH += D:/SoftwareInstall/Matlab2017b/extern/include/Win64
+
+# 用到的MATLAB 的.lib库文件 及其搜索路径
+INCLUDEPATH += D:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft
+DEPENDPATH += D:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft
+
+win32: LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibmex
+win32: LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibmx
+win32: LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibmat
+win32: LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibeng
+win32: LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -lmclmcr
+win32: LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -lmclmcrrt
+
+SOURCES += \
+    main.cpp \
+    clientthread.cpp \
+    diagnosis.cpp \
+    features.cpp \
+    figurecontrol.cpp \
+    mainwindow.cpp \
+    qcustomlabel.cpp \
+    qcustomplot.cpp \
+    radarwidget.cpp \
+    savefile.cpp \
+    vibrationdialog.cpp
+
+HEADERS += \
+    clientthread.h \
+    diagnosis.h \
+    features.h \
+    figurecontrol.h \
+    mainwindow.h \
+    qcustomlabel.h \
+    qcustomplot.h \
+    radarwidget.h \
+    savefile.h \
+    vibrationdialog.h \
+    my_add/for_redistribution_files_only/my_add.h

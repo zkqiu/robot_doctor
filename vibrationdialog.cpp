@@ -1,5 +1,5 @@
 #include "vibrationdialog.h"
-#include "ui_Vibrationdialog.h"
+#include "ui_vibrationdialog.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "savefile.h"
@@ -124,12 +124,11 @@ void VibrationDialog::updatePeriod(QString text)
 void VibrationDialog::startSave()
 {
     // 创建并运行保存文件子线程
-<<<<<<< HEAD
+
     //if(ui->checkBox->isChecked())
     //{
 //        qDebug()<<"is checked";
-=======
->>>>>>> log
+
         QDateTime dt;
         QTime currTime;
         QDate currDate;
@@ -148,13 +147,11 @@ void VibrationDialog::startSave()
         fileThread->start();
         // 文件子线程ID，用于调试
         //qDebug()<<"fileThread id is "<<fileThread->currentThreadId();
-<<<<<<< HEAD
    // }
    // else
    // {//qDebug()<<"not checked";
    // }
-=======
->>>>>>> log
+
 }
 
 void VibrationDialog::openHistory()
@@ -204,4 +201,9 @@ void VibrationDialog::evalHealth()
     ui->textFault->setFont(font);
     ui->textFault->setText(faultstring.toStdString().c_str());*/
     ui->textFault->setText("振动信号正常，噪声信号正常");
+}
+
+void VibrationDialog::on_pushButton_clicked()
+{
+
 }

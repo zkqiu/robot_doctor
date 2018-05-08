@@ -462,11 +462,63 @@
     </layout>
    </widget>
   </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>630</y>
+     <width>261</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>my_add</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_2"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>=</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>ANS</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <zorder>figureListWidget</zorder>
   <zorder>groupBox</zorder>
   <zorder>groupBox_2</zorder>
   <zorder>groupBox_4</zorder>
   <zorder>groupBox_3</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>label</zorder>
+  <zorder>lineEdit_2</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
  </widget>
  <customwidgets>
   <customwidget>

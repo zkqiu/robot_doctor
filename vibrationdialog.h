@@ -11,6 +11,7 @@
 #include "figurecontrol.h"
 #include "clientthread.h"
 #include "diagnosis.h"
+//#include "my_add.h"
 
 namespace Ui {
 class VibrationDialog;
@@ -55,6 +56,7 @@ private slots:
     void startSave();
     void openHistory();
     void evalHealth();
+    void on_pushButton_clicked();
 };
 
 
