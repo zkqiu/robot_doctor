@@ -1,0 +1,96 @@
+<html><meta charset="UTF-8"><pre>
+<font color=blue>mcc -W cpplib:my_add -T link:lib -d D:\Study\毕业设计\实验数据\my_add\for_testing -v D:\Study\毕业设计\实验数据\my_add.m </font>
+Compiler version: 6.5 (R2017b)
+
+Dependency analysis by REQUIREMENTS.
+
+Parsing file "D:\Study\毕业设计\实验数据\my_add.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.h".
+Generating file "D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.cpp".
+Generating file "D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.exports".
+Generating file "D:\Study\毕业设计\实验数据\my_add\for_testing\readme.txt".
+Executing command: ""D:\SoftwareInstall\Matlab2017b\bin\mbuild"  -client mbuild -O -v -output "my_add" -I"D:\Study\毕业设计\实验数据\my_add\for_testing" "D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.cpp"  DEFFILE"=""D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.def""" LINKEXPORT"=""/DLL /def:\"$DEFFILE\"""" LDEXT"="".dll""" LDTYPE"="" -shared -static""" MTCMDLINE"=""mt -outputresource:$EXE;2 -manifest $MANIFEST""" -outdir "D:\Study\毕业设计\实验数据\my_add\for_testing""
+详细模式已开。
+... 正在查找编译器 'MinGW64 Compiler (C++)'...
+... 正在查找环境变量 'MW_MINGW64_LOC'...是('C:\TDM-GCC-64')。
+... 正在查找文件 'C:\TDM-GCC-64\bin\g++.exe'...是。
+... 正在查找文件夹 'C:\TDM-GCC-64'...是。
+找到已安装的编译器 'MinGW64 Compiler (C++)'。
+设置 PATH = C:\TDM-GCC-64\bin;D:\SoftwareInstall\Matlab2017b\extern\include\win64;D:\SoftwareInstall\Matlab2017b\extern\include;D:\SoftwareInstall\Matlab2017b\simulink\include;D:\SoftwareInstall\Matlab2017b\lib\win64;D:\SoftwareInstall\Python2.7\;D:\SoftwareInstall\Python2.7\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\SoftwareInstall\Matlab2017b\runtime\win64;D:\SoftwareInstall\Matlab2017b\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Users\邱志康\AppData\Local\Microsoft\WindowsApps;C:\Users\邱志康\AppData\Local\GitHubDesktop\bin;C:\Users\QiuZhikang\AppData\Local\GitHubDesktop\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+设置 INCLUDE = C:\TDM-GCC-64\include;
+设置 LIB = C:\TDM-GCC-64\lib;;
+设置 MW_TARGET_ARCH = win64;
+设置 LIBPATH = D:\SoftwareInstall\Matlab2017b\extern\lib\win64;
+Options file details
+-------------------------------------------------------------------
+	Compiler location: C:\TDM-GCC-64
+	Options file: C:\Users\QiuZhikang\AppData\Roaming\MathWorks\MATLAB\R2017b\MBUILD_C++_win64.xml
+	CMDLINE1 : C:\TDM-GCC-64\bin\g++ -c -DMX_COMPAT_64  -DUSE_MEX_CMD   -m64  -I"D:\Study\毕业设计\实验数据\my_add\for_testing"  -I"D:\SoftwareInstall\Matlab2017b/extern/include" -I"D:\SoftwareInstall\Matlab2017b/simulink/include" -I"D:\SoftwareInstall\Matlab2017b\extern\include\win64" -fexceptions -fno-omit-frame-pointer -std=c++11 -Wno-endif-labels -O -DNDEBUG "D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.cpp" -o C:\Users\QIUZHI~1\AppData\Local\Temp\mex_654128973978028_10752\my_add.obj
+	CMDLINE2 : C:\TDM-GCC-64\bin\g++ -m64 -Wl,--no-undefined,--out-implib,D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.lib,"D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.def"  -shared -static -s  C:\Users\QIUZHI~1\AppData\Local\Temp\mex_654128973978028_10752\my_add.obj   -L"D:\SoftwareInstall\Matlab2017b\extern\lib\win64\mingw64" -lmclmcrrt -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 -o D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.dll
+	CXX : C:\TDM-GCC-64\bin\g++
+	COMPILER : C:\TDM-GCC-64\bin\g++
+	DEFINES : -DMX_COMPAT_64  -DUSE_MEX_CMD   -m64 
+	MATLABMEX : 
+	CFLAGS : -fexceptions -fno-omit-frame-pointer
+	CXXFLAGS : -fexceptions -fno-omit-frame-pointer -std=c++11 -Wno-endif-labels
+	INCLUDE : -I"D:\Study\毕业设计\实验数据\my_add\for_testing"  -I"D:\SoftwareInstall\Matlab2017b/extern/include" -I"D:\SoftwareInstall\Matlab2017b/simulink/include" -I"D:\SoftwareInstall\Matlab2017b\extern\include\win64"
+	CXXOPTIMFLAGS : -O -DNDEBUG
+	CXXDEBUGFLAGS : -g
+	LDXX : C:\TDM-GCC-64\bin\g++
+	LINKER : C:\TDM-GCC-64\bin\g++
+	LDFLAGS : -m64 -Wl,--no-undefined,--out-implib,D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.lib,"D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.def"
+	LDTYPE :  -shared -static
+	LINKEXPORT : /DLL /def:"D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.def"
+	LINKEXPORTVER : 
+	LIBLOC : D:\SoftwareInstall\Matlab2017b\extern\lib\win64\mingw64
+	LINKLIBS : -L"D:\SoftwareInstall\Matlab2017b\extern\lib\win64\mingw64" -lmclmcrrt -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32
+	LDOPTIMFLAGS : -s
+	LDDEBUGFLAGS : -g
+	OBJEXT : .obj
+	LDEXT : .dll
+	SETENV : set COMPILER=C:\TDM-GCC-64\bin\gcc
+                set CXXCOMPILER=C:\TDM-GCC-64\bin\g++
+                set COMPFLAGS=-c -fexceptions -fno-omit-frame-pointer -DMX_COMPAT_64  -DUSE_MEX_CMD   -m64  
+                set CXXCOMPFLAGS=-c -fexceptions -fno-omit-frame-pointer -std=c++11 -Wno-endif-labels -DMX_COMPAT_64  -DUSE_MEX_CMD   -m64  
+                set OPTIMFLAGS=-O -DNDEBUG
+                set DEBUGFLAGS=-g
+                set LINKER=C:\TDM-GCC-64\bin\gcc
+                set CXXLINKER=C:\TDM-GCC-64\bin\g++
+                set LINKFLAGS=-m64 -Wl,--no-undefined,--out-implib,D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.lib,"D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.def"  -shared -static -L"D:\SoftwareInstall\Matlab2017b\extern\lib\win64\mingw64" -lmclmcrrt -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 /DLL /def:"D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.def"
+                set LINKDEBUGFLAGS=-g
+                set NAME_OUTPUT= -o "%OUTDIR%%MEX_NAME%%MEX_EXT%"
+	MINGWROOT : C:\TDM-GCC-64
+	MATLABROOT : D:\SoftwareInstall\Matlab2017b
+	ARCH : win64
+	DEFFILE : D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.def
+	LINKTYPE : 
+	SRC : "D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.cpp"
+	OBJ : C:\Users\QIUZHI~1\AppData\Local\Temp\mex_654128973978028_10752\my_add.obj
+	OBJS : C:\Users\QIUZHI~1\AppData\Local\Temp\mex_654128973978028_10752\my_add.obj 
+	SRCROOT : D:\Study\毕业设计\实验数据\my_add\for_testing\my_add
+	DEF : C:\Users\QIUZHI~1\AppData\Local\Temp\mex_654128973978028_10752\my_add.def
+	EXP : D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.exp
+	LIB : D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.lib
+	EXE : D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.dll
+	ILK : D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.ilk
+	MANIFEST : D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.dll.manifest
+	TEMPNAME : D:\Study\毕业设计\实验数据\my_add\for_testing\my_add
+	EXEDIR : D:\Study\毕业设计\实验数据\my_add\for_testing\
+	EXENAME : my_add
+	MTCMDLINE : mt -outputresource:D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.dll;2 -manifest D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.dll.manifest
+	OPTIM : -O -DNDEBUG
+	LINKOPTIM : -s
+-------------------------------------------------------------------
+使用 'MinGW64 Compiler (C++)' 编译。
+警告: 您使用的是不受支持的 MinGW 编译器版本。要安装支持的 MinGW 编译器版本，请访问 http://www.mathworks.com/help/matlab/matlab_external/install-mingw-support-package.html。
+ 有关当前支持的编译器的列表，请参阅: https://www.mathworks.com/support/compilers。
+C:\TDM-GCC-64\bin\g++ -c -DMX_COMPAT_64  -DUSE_MEX_CMD   -m64  -I"D:\Study\毕业设计\实验数据\my_add\for_testing"  -I"D:\SoftwareInstall\Matlab2017b/extern/include" -I"D:\SoftwareInstall\Matlab2017b/simulink/include" -I"D:\SoftwareInstall\Matlab2017b\extern\include\win64" -fexceptions -fno-omit-frame-pointer -std=c++11 -Wno-endif-labels -O -DNDEBUG "D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.cpp" -o C:\Users\QIUZHI~1\AppData\Local\Temp\mex_654128973978028_10752\my_add.obj
+C:\TDM-GCC-64\bin\g++ -m64 -Wl,--no-undefined,--out-implib,D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.lib,"D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.def"  -shared -static -s  C:\Users\QIUZHI~1\AppData\Local\Temp\mex_654128973978028_10752\my_add.obj   -L"D:\SoftwareInstall\Matlab2017b\extern\lib\win64\mingw64" -lmclmcrrt -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 -o D:\Study\毕业设计\实验数据\my_add\for_testing\my_add.dll
+<font color=blue>正在打包...</font>
+Creating the bundle...
+Web based installer created at D:\Study\毕业设计\实验数据\my_add\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 1 minutes and 58 seconds.
+</pre></html>

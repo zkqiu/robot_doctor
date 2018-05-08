@@ -55,6 +55,7 @@ private slots:
     void startSave();
     void openHistory();
     void evalHealth();
+    void on_pushButton_clicked();
 };
 
 

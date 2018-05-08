@@ -49,6 +49,7 @@ HEADERS  += \
     figurecontrol.h \
     vibrationdialog.h \
     mainwindow.h \
+    my_add/for_redistribution_files_only/my_add.h
 
 FORMS    += \
     vibrationdialog.ui \

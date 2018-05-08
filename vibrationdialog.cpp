@@ -1,8 +1,9 @@
 #include "vibrationdialog.h"
-#include "ui_Vibrationdialog.h"
+#include "ui_vibrationdialog.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "savefile.h"
+#include "my_add/for_redistribution_files_only/my_add.h"
 
 VibrationDialog::VibrationDialog(QWidget *parent) :
     QDialog(parent),
@@ -191,4 +192,9 @@ void VibrationDialog::evalHealth()
     ui->textFault->setFont(font);
     ui->textFault->setText(faultstring.toStdString().c_str());*/
     ui->textFault->setText("振动信号正常，噪声信号正常");
+}
+
+void VibrationDialog::on_pushButton_clicked()
+{
+
 }
