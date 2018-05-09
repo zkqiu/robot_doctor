@@ -49,7 +49,7 @@ HEADERS  += \
     figurecontrol.h \
     vibrationdialog.h \
     mainwindow.h \
-    my_add/for_redistribution_files_only/my_add.h
+    my_add.h
 
 FORMS    += \
     vibrationdialog.ui \
@@ -68,3 +68,26 @@ RESOURCES += \
 #macx:QMAKE_POST_LINK += cp ../lib/libchartdir.6.dylib \"`dirname $(TARGET)`/../Frameworks\";
 #macx:QMAKE_POST_LINK += install_name_tool -change libchartdir.6.dylib \
 #     \@loader_path/../Frameworks/libchartdir.6.dylib \"$(TARGET)\";
+LIBS += -L$$PWD/./ -lmy_add
+
+
+INCLUDEPATH += $$PWD/.
+DEPENDPATH += $$PWD/.
+
+# .h文件搜索路径
+INCLUDEPATH += D:/SoftwareInstall/Matlab2017b/extern/include
+INCLUDEPATH += D:/SoftwareInstall/Matlab2017b/extern/include/win64
+
+# 用到的MATLAB 的.lib库文件 及其搜索路径
+INCLUDEPATH += D:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft
+DEPENDPATH += D:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft
+
+LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibmex
+LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibmx
+LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibmat
+LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibeng
+LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -lmclmcr
+LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -lmclmcrrt
+
+
+

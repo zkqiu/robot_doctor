@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vibrationdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.10.1
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -19,7 +19,9 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
+#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
@@ -57,6 +59,7 @@ public:
     QLabel *label_4;
     QComboBox *updatePeriod;
     QListWidget *listWidget;
+    QPlainTextEdit *plainTextEdit;
     QGroupBox *groupBox_3;
     QTextEdit *textFault;
     QLabel *label_6;
@@ -67,12 +70,20 @@ public:
     QPushButton *btnStop;
     QPushButton *btnHistory;
     QPushButton *btnEval;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_7;
+    QLineEdit *lineEdit;
+    QLabel *label;
+    QLineEdit *lineEdit_2;
+    QLabel *label_2;
+    QLabel *label_3;
+    QPushButton *pushButton;
 
     void setupUi(QWidget *VibrationDialog)
     {
         if (VibrationDialog->objectName().isEmpty())
             VibrationDialog->setObjectName(QStringLiteral("VibrationDialog"));
-        VibrationDialog->resize(1041, 663);
+        VibrationDialog->resize(1041, 755);
         VibrationDialog->setStyleSheet(QStringLiteral("background-color: rgb(210, 226, 243);"));
         figureListWidget = new QListWidget(VibrationDialog);
         figureListWidget->setObjectName(QStringLiteral("figureListWidget"));
@@ -225,6 +236,9 @@ public:
 
         verticalLayout_3->addWidget(listWidget);
 
+        plainTextEdit = new QPlainTextEdit(groupBox_2);
+        plainTextEdit->setObjectName(QStringLiteral("plainTextEdit"));
+        plainTextEdit->setGeometry(QRect(40, 300, 31, 21));
         groupBox_3 = new QGroupBox(VibrationDialog);
         groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
         groupBox_3->setGeometry(QRect(340, 320, 521, 301));
@@ -314,11 +328,53 @@ public:
 
         verticalLayout_2->addWidget(btnEval);
 
+        widget = new QWidget(VibrationDialog);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(20, 630, 403, 25));
+        horizontalLayout_7 = new QHBoxLayout(widget);
+        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
+        horizontalLayout_7->setContentsMargins(0, 0, 0, 0);
+        lineEdit = new QLineEdit(widget);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+
+        horizontalLayout_7->addWidget(lineEdit);
+
+        label = new QLabel(widget);
+        label->setObjectName(QStringLiteral("label"));
+
+        horizontalLayout_7->addWidget(label);
+
+        lineEdit_2 = new QLineEdit(widget);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+
+        horizontalLayout_7->addWidget(lineEdit_2);
+
+        label_2 = new QLabel(widget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        horizontalLayout_7->addWidget(label_2);
+
+        label_3 = new QLabel(widget);
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        horizontalLayout_7->addWidget(label_3);
+
+        pushButton = new QPushButton(widget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+
+        horizontalLayout_7->addWidget(pushButton);
+
         figureListWidget->raise();
         groupBox->raise();
         groupBox_2->raise();
         groupBox_4->raise();
         groupBox_3->raise();
+        label->raise();
+        lineEdit->raise();
+        lineEdit_2->raise();
+        label_2->raise();
+        label_3->raise();
+        pushButton->raise();
 
         retranslateUi(VibrationDialog);
 
@@ -327,22 +383,26 @@ public:
 
     void retranslateUi(QWidget *VibrationDialog)
     {
-        VibrationDialog->setWindowTitle(QApplication::translate("VibrationDialog", "Form", nullptr));
-        groupBox->setTitle(QApplication::translate("VibrationDialog", "\344\274\240\346\204\237\345\231\250\351\200\211\346\213\251", nullptr));
-        VibrationSensor1->setText(QApplication::translate("VibrationDialog", "\346\214\257\345\212\250\344\274\240\346\204\237\345\231\2501", nullptr));
-        VibrationSensor2->setText(QApplication::translate("VibrationDialog", "\346\214\257\345\212\250\344\274\240\346\204\237\345\231\2502", nullptr));
-        VibrationSensor3->setText(QApplication::translate("VibrationDialog", "\346\214\257\345\212\250\344\274\240\346\204\237\345\231\2503", nullptr));
-        NoiseSensor->setText(QApplication::translate("VibrationDialog", "\345\231\252\345\243\260\344\274\240\346\204\237\345\231\250  ", nullptr));
-        groupBox_2->setTitle(QApplication::translate("VibrationDialog", "\344\277\241\345\217\267\351\207\207\351\233\206\344\270\216\345\202\250\345\255\230", nullptr));
-        label_5->setText(QApplication::translate("VibrationDialog", "\346\227\245\346\234\237\351\200\211\346\213\251", nullptr));
-        label_4->setText(QApplication::translate("VibrationDialog", "\346\263\242\345\275\242\345\210\267\346\226\260\346\227\266\351\227\264", nullptr));
-        groupBox_3->setTitle(QApplication::translate("VibrationDialog", "\345\201\245\345\272\267\350\257\212\346\226\255", nullptr));
+        VibrationDialog->setWindowTitle(QApplication::translate("VibrationDialog", "Form", Q_NULLPTR));
+        groupBox->setTitle(QApplication::translate("VibrationDialog", "\344\274\240\346\204\237\345\231\250\351\200\211\346\213\251", Q_NULLPTR));
+        VibrationSensor1->setText(QApplication::translate("VibrationDialog", "\346\214\257\345\212\250\344\274\240\346\204\237\345\231\2501", Q_NULLPTR));
+        VibrationSensor2->setText(QApplication::translate("VibrationDialog", "\346\214\257\345\212\250\344\274\240\346\204\237\345\231\2502", Q_NULLPTR));
+        VibrationSensor3->setText(QApplication::translate("VibrationDialog", "\346\214\257\345\212\250\344\274\240\346\204\237\345\231\2503", Q_NULLPTR));
+        NoiseSensor->setText(QApplication::translate("VibrationDialog", "\345\231\252\345\243\260\344\274\240\346\204\237\345\231\250  ", Q_NULLPTR));
+        groupBox_2->setTitle(QApplication::translate("VibrationDialog", "\344\277\241\345\217\267\351\207\207\351\233\206\344\270\216\345\202\250\345\255\230", Q_NULLPTR));
+        label_5->setText(QApplication::translate("VibrationDialog", "\346\227\245\346\234\237\351\200\211\346\213\251", Q_NULLPTR));
+        label_4->setText(QApplication::translate("VibrationDialog", "\346\263\242\345\275\242\345\210\267\346\226\260\346\227\266\351\227\264", Q_NULLPTR));
+        groupBox_3->setTitle(QApplication::translate("VibrationDialog", "\345\201\245\345\272\267\350\257\212\346\226\255", Q_NULLPTR));
         label_6->setText(QString());
-        groupBox_4->setTitle(QApplication::translate("VibrationDialog", "\346\216\247\345\210\266", nullptr));
-        btnRun->setText(QApplication::translate("VibrationDialog", "\345\274\200\345\247\213", nullptr));
-        btnStop->setText(QApplication::translate("VibrationDialog", "\345\201\234\346\255\242", nullptr));
-        btnHistory->setText(QApplication::translate("VibrationDialog", "\345\233\236\346\224\276", nullptr));
-        btnEval->setText(QApplication::translate("VibrationDialog", "\350\257\212\346\226\255", nullptr));
+        groupBox_4->setTitle(QApplication::translate("VibrationDialog", "\346\216\247\345\210\266", Q_NULLPTR));
+        btnRun->setText(QApplication::translate("VibrationDialog", "\345\274\200\345\247\213", Q_NULLPTR));
+        btnStop->setText(QApplication::translate("VibrationDialog", "\345\201\234\346\255\242", Q_NULLPTR));
+        btnHistory->setText(QApplication::translate("VibrationDialog", "\345\233\236\346\224\276", Q_NULLPTR));
+        btnEval->setText(QApplication::translate("VibrationDialog", "\350\257\212\346\226\255", Q_NULLPTR));
+        label->setText(QApplication::translate("VibrationDialog", "+", Q_NULLPTR));
+        label_2->setText(QApplication::translate("VibrationDialog", "=", Q_NULLPTR));
+        label_3->setText(QApplication::translate("VibrationDialog", "ANS", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("VibrationDialog", "my_add", Q_NULLPTR));
     } // retranslateUi
 
 };

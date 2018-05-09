@@ -3,7 +3,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "savefile.h"
-#include "my_add/for_redistribution_files_only/my_add.h"
+
+#include "QDebug"
 
 VibrationDialog::VibrationDialog(QWidget *parent) :
     QDialog(parent),
@@ -196,5 +197,11 @@ void VibrationDialog::evalHealth()
 
 void VibrationDialog::on_pushButton_clicked()
 {
-
+    if (!my_addInitialize()) //DLL 初始化!my_addInitialize()
+       {
+          qDebug()<<"动态链接库初始化失败";
+          return;
+       }
+    else
+        qDebug()<<"初始化成功";
 }

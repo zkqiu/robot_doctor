@@ -11,6 +11,7 @@
 #include "figurecontrol.h"
 #include "clientthread.h"
 #include "diagnosis.h"
+#include "my_add.h"
 
 namespace Ui {
 class VibrationDialog;
