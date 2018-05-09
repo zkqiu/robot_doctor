@@ -68,26 +68,27 @@ RESOURCES += \
 #macx:QMAKE_POST_LINK += cp ../lib/libchartdir.6.dylib \"`dirname $(TARGET)`/../Frameworks\";
 #macx:QMAKE_POST_LINK += install_name_tool -change libchartdir.6.dylib \
 #     \@loader_path/../Frameworks/libchartdir.6.dylib \"$(TARGET)\";
-LIBS += -L$$PWD/./ -lmy_add
 
+
+
+
+
+win32: LIBS += -L$$PWD/./ -lmy_add
 
 INCLUDEPATH += $$PWD/.
 DEPENDPATH += $$PWD/.
 
-# .hÊñá‰ª∂ÊêúÁ¥¢Ë∑ØÂæÑ
-INCLUDEPATH += D:/SoftwareInstall/Matlab2017b/extern/include
-INCLUDEPATH += D:/SoftwareInstall/Matlab2017b/extern/include/win64
+# .hŒƒº˛À—À˜¬∑æ∂
+INCLUDEPATH += C:/MATLAB2017B/extern/include
+INCLUDEPATH += C:/MATLAB2017B/extern/include/Win64
 
-# Áî®Âà∞ÁöÑMATLAB ÁöÑ.libÂ∫ìÊñá‰ª∂ ÂèäÂÖ∂ÊêúÁ¥¢Ë∑ØÂæÑ
-INCLUDEPATH += D:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft
-DEPENDPATH += D:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft
+# ”√µΩµƒMATLAB µƒ.libø‚Œƒº˛ º∞∆‰À—À˜¬∑æ∂
+INCLUDEPATH += C:/MATLAB2017B/extern/lib/win64/microsoft
+DEPENDPATH += C:/MATLAB2017B/extern/lib/win64/microsoft
 
-LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibmex
-LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibmx
-LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibmat
-LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -llibeng
-LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -lmclmcr
-LIBS += -LD:/SoftwareInstall/Matlab2017b/extern/lib/win64/microsoft/ -lmclmcrrt
-
-
-
+win32: LIBS += -LC:/MATLAB2017B/extern/lib/win64/microsoft/ -llibmex
+win32: LIBS += -LC:/MATLAB2017B/extern/lib/win64/microsoft/ -llibmx
+win32: LIBS += -LC:/MATLAB2017B/extern/lib/win64/microsoft/ -llibmat
+win32: LIBS += -LC:/MATLAB2017B/extern/lib/win64/microsoft/ -llibeng
+win32: LIBS += -LC:/MATLAB2017B/extern/lib/win64/microsoft/ -lmclmcr
+win32: LIBS += -LC:/MATLAB2017B/extern/lib/win64/microsoft/ -lmclmcrrt
